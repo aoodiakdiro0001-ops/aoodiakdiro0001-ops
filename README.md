@@ -1,15 +1,15 @@
-# 🎨 Spatial-ZeroBaran
+# 📊 Data-Nexus ZeroBaran
 
 <div align="center">
 
-### 🧊 الاستوديو الذاتي لتوليد ومعالجة المجسمات ثلاثية الأبعاد
+### 🧠 منظومة تحليل وهندسة البيانات الذاتية واللامركزية
 
-**منظومة أتمتة ذكية تحوّل النصوص والصور إلى مجسمات 3D جاهزة للاستخدام في Unreal Engine و Unity و Blender**
+**نظام ذكي متكامل لجمع، تنظيف، تحليل، واستخراج الرؤى من قواعد البيانات الضخمة والملفات المتعددة أوتوماتيكياً**
 
-![Models](https://img.shields.io/badge/Models-847+-purple?style=for-the-badge)
-![Polygons](https://img.shields.io/badge/Polygons-2.5M+-pink?style=for-the-badge)
-![Time](https://img.shields.io/badge/Time-<10s-blue?style=for-the-badge)
-![Cost](https://img.shields.io/badge/Cost-FREE-green?style=for-the-badge)
+![Data Points](https://img.shields.io/badge/Data_Points-2.5M+-blue?style=for-the-badge)
+![Insights](https://img.shields.io/badge/Insights-1547+-purple?style=for-the-badge)
+![Accuracy](https://img.shields.io/badge/Accuracy-98.7%25-green?style=for-the-badge)
+![Cost](https://img.shields.io/badge/Cost-FREE-brightgreen?style=for-the-badge)
 
 [🌐 الموقع](#) | [📦 المتجر](https://baranavi.gumroad.com/) | [📧 تواصل](mailto:baranavisat@gmail.com)
 
@@ -17,15 +17,16 @@
 
 ---
 
-## 📖 ما هو Spatial-ZeroBaran؟
+## 📖 ما هو Data-Nexus ZeroBaran؟
 
-منظومة أتمتة ذكية تقوم بـ:
+منظومة ذكية متكاملة تقوم بـ:
 
-- ✅ **توليد مجسمات 3D من صور 2D** — حوّل أي صورة إلى مجسم ثلاثي الأبعاد
-- ✅ **توليد من النصوص** — اكتب وصفاً واحصل على مجسم جاهز
-- ✅ **تقليل المضلعات تلقائياً** — من 50MB إلى 2MB مع الحفاظ على التفاصيل
-- ✅ **توليد الإكساءات** — UV Mapping وإكساءات احترافية
-- ✅ **تصدير متعدد الصيغ** — GLB, OBJ, FBX جاهزة للسحب والإسقاط
+- ✅ **جمع البيانات الذكي** — ربط مصادر بيانات متعددة (CSV, JSON, SQL, APIs)
+- ✅ **تنظيف ومعالجة تلقائية** — إزالة القيم المفقودة والشوائب برمجياً
+- ✅ **تحليل تنبؤي بالـ AI** — توقع الاتجاهات المستقبلية واستخراج التوصيات
+- ✅ **لوحات تحكم تفاعلية** — رسوم بيانية مذهلة على Streamlit Cloud
+- ✅ **تنبيهات ذكية فورية** — إشعارات على تليجرام عند الشذوذ
+- ✅ **سيادة مطلقة على البيانات** — حماية بياناتك الحساسة
 
 **كل هذا — بدون دفع دولار واحد!**
 
@@ -35,43 +36,43 @@
 
 | المكون | التقنية | الدور |
 |--------|---------|-------|
-| ⚙️ التشغيل | GitHub Actions | خوادم GPU/CPU مجانية |
-| 🧠 التوليد | TripoSR / Shap-E | نماذج AI مفتوحة المصدر |
-| 🔧 المعالجة | Blender Headless | تقليل المضلعات وتحسين الإكساء |
-| 💾 التخزين | Supabase Storage | أرشيف المكتبة |
-| 📨 الواجهة | Telegram Bot | استقبال الأوامر والتسليم |
-| ☁️ الاستضافة | Hugging Face Spaces | تشغيل النماذج المجانية |
+| ⚙️ المعالجة | Python + Pandas | سحب البيانات وتنظيفها |
+| 🔄 التشغيل | GitHub Actions | تنفيذ عمليات ETL دورياً |
+| 🧠 التحليل | Google Gemini API | تحليل الاتجاهات والتوصيات |
+| 💾 التخزين | Supabase | مستودع البيانات السحابي |
+| 📊 العرض | Streamlit Cloud | لوحة تحكم تفاعلية |
+| 🔔 التنبيهات | Telegram Bot API | تقارير دورية وتنبيهات |
 
 ---
 
 ## 🏗️ البنية المعمارية
 
 ```
-[إرسال صورة/وصف]
+[مصادر البيانات (CSV, JSON, SQL, APIs)]
          ↓
-[TripoSR/Shap-E: توليد مجسم 3D خام]
+[GitHub Actions + Python (ETL Pipeline)]
          ↓
-[Blender Headless: تقليل المضلعات + UV Mapping]
+[Supabase (Data Lakehouse)]
          ↓
-[Supabase Storage: تخزين + معاينة GIF]
+[Google Gemini API (AI Insights)]
          ↓
-[Telegram: رابط تنزيل مباشر]
+[Streamlit Dashboard + Telegram Bot]
 ```
 
 ### الطبقات الأربع:
-1. **طبقة الاستقبال** — بوت تليجرام أو واجهة ويب
-2. **محرك التوليد** — TripoSR / Shap-E
-3. **محرك المعالجة** — Blender Headless
-4. **طبقة التسليم** — Supabase + Telegram
+1. **طبقة الجلب والمعالجة** — ETL Pipeline Layer
+2. **العقل التنبؤي** — AI Insights Core
+3. **طبقة التخزين** — Data Persistence
+4. **طبقة العرض** — Visualization & Delivery
 
 ---
 
 ## 🎯 لماذا تحتاجه؟
 
-- 💰 **توفير مالي هائل** — بناء مكتبة مجسمات يكلف آلاف الدولارات
-- ⚡ **تسريع خطوط الإنتاج** — أسابيع من النمذجة إلى دقائق
-- 🔧 **أتمتة التنظيف** — تحسين أداء المجسمات تلقائياً
-- 🔒 **ملكية تجارية كاملة** — استخدم في مشاريعك بدون قيود
+- 💰 **توفير مالي فلكي** — أدوات التحليل المتقدمة تكلف ثروات
+- 📈 **تحليل تنبؤي فوري** — يتوقع الاتجاهات المستقبلية
+- 🔒 **سيادة مطلقة للبيانات** — حماية بياناتك الحساسة
+- ⚡ **أتمتة كاملة** — كل شيء يعمل تلقائياً 24/7
 
 ---
 
@@ -79,8 +80,8 @@
 
 ```bash
 # Clone
-git clone https://github.com/YOUR_USERNAME/spatial-zerobaran.git
-cd spatial-zerobaran
+git clone https://github.com/YOUR_USERNAME/data-nexus-zerobaran.git
+cd data-nexus-zerobaran
 
 # Install
 npm install
@@ -118,7 +119,7 @@ npm run build
 - **PolyGlot-StreamBaran** — منظومة الترجمة والدبلجة الصوتية
 - **AIOps-ZeroBaran** — المهندس الرقمي لإدارة الخوادم
 - **Lead-Sniper ZeroBaran** — منظومة صيد العملاء الذكية
-- **CryptoVault Pro** — محفظة رقمية متعددة السلاسل
+- **Spatial-ZeroBaran** — استوديو توليد المجسمات 3D
 - **AI Copywriter** — مولّد نصوص تسويقية ذكي
 
 ---
@@ -127,6 +128,6 @@ npm run build
 
 **صُنع بـ ❤️ وذكاء اصطناعي مجاني**
 
-© 2025 Spatial-ZeroBaran — Baran Avisat. جميع الحقوق محفوظة.
+© 2025 Data-Nexus ZeroBaran — Baran Avisat. جميع الحقوق محفوظة.
 
 </div>

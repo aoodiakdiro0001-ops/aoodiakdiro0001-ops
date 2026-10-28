@@ -1,15 +1,15 @@
-# ™️ العلامات التجارية - Spatial-ZeroBaran
+# ™️ العلامات التجارية - Data-Nexus ZeroBaran
 
 ---
 
 ## 🎨 علاماتنا التجارية
 
-### Spatial-ZeroBaran™
+### Data-Nexus ZeroBaran™
 
 - **النوع:** علامة تجارية
 - **المالك:** Baran Avisat
 - **التسجيل:** قيد التسجيل
-- **الاستخدام:** استوديو توليد المجسمات ثلاثية الأبعاد
+- **الاستخدام:** منظومة تحليل وهندسة البيانات
 
 ### Studio-ZeroBaran™
 
@@ -30,25 +30,19 @@
 - **TypeScript™** - علامة تجارية لـ Microsoft Corporation
 - **Tailwind CSS™** - علامة تجارية لـ Tailwind Labs, Inc.
 - **Vite™** - علامة تجارية لـ Evan You
-- **Blender™** - علامة تجارية لـ Blender Foundation
+- **Pandas™** - علامة تجارية لمطوري Pandas
 
 ### المنصات
 
 - **GitHub™** - علامة تجارية لـ Microsoft Corporation
-- **Hugging Face™** - علامة تجارية لـ Hugging Face, Inc.
 - **Supabase™** - علامة تجارية لـ Supabase, Inc.
+- **Streamlit™** - علامة تجارية لـ Snowflake Inc.
 - **Vercel™** - علامة تجارية لـ Vercel, Inc.
 
-### محركات الألعاب
+### الذكاء الاصطناعي
 
-- **Unreal Engine™** - علامة تجارية لـ Epic Games, Inc.
-- **Unity™** - علامة تجارية لـ Unity Technologies
-- **Godot™** - علامة تجارية لـ Godot Foundation
-
-### النماذج
-
-- **TripoSR™** - علامة تجارية لـ Stability AI
-- **Shap-E™** - علامة تجارية لـ OpenAI, Inc.
+- **Google Gemini™** - علامة تجارية لـ Google LLC
+- **Groq™** - علامة تجارية لـ Groq, Inc.
 
 ---
 
@@ -73,6 +67,6 @@
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 Spatial-ZeroBaran. جميع الحقوق محفوظة.
+© 2025 Data-Nexus ZeroBaran. جميع الحقوق محفوظة.
 
 </div>

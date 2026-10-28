@@ -1,6 +1,6 @@
-# 🤝 دليل المساهمة - Spatial-ZeroBaran
+# 🤝 دليل المساهمة - Data-Nexus ZeroBaran
 
-شكراً لاهتمامك بالمساهمة في مشروع Spatial-ZeroBaran! 🎉
+شكراً لاهتمامك بالمساهمة في مشروع Data-Nexus ZeroBaran! 🎉
 
 ---
 
@@ -10,7 +10,7 @@
 
 إذا وجدت خطأً في المشروع:
 
-1. اذهب إلى [Issues](https://github.com/YOUR_USERNAME/spatial-zerobaran/issues)
+1. اذهب إلى [Issues](https://github.com/YOUR_USERNAME/data-nexus-zerobaran/issues)
 2. اضغط "New Issue"
 3. اختر "Bug Report"
 4. املأ التفاصيل بأكبر قدر ممكن
@@ -20,7 +20,7 @@
 
 إذا كان لديك فكرة لتحسين المشروع:
 
-1. اذهب إلى [Issues](https://github.com/YOUR_USERNAME/spatial-zerobaran/issues)
+1. اذهب إلى [Issues](https://github.com/YOUR_USERNAME/data-nexus-zerobaran/issues)
 2. اضغط "New Issue"
 3. اختر "Feature Request"
 4. اشرح الفكرة بوضوح
@@ -37,8 +37,8 @@
 
 2. **استنسخ المشروع**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/spatial-zerobaran.git
-   cd spatial-zerobaran
+   git clone https://github.com/YOUR_USERNAME/data-nexus-zerobaran.git
+   cd data-nexus-zerobaran
    ```
 
 3. **أنشئ فرع جديد**
@@ -182,7 +182,7 @@ npm run dev
 
 جميع المساهمين سيتم ذكرهم في ملف CONTRIBUTORS.md
 
-شكراً لمساعدتك في تحسين Spatial-ZeroBaran! 🚀
+شكراً لمساعدتك في تحسين Data-Nexus ZeroBaran! 🚀
 
 ---
 
@@ -190,6 +190,6 @@ npm run dev
 
 **صُنع بـ ❤️ بواسطة المجتمع**
 
-© 2025 Spatial-ZeroBaran — Baran Avisat
+© 2025 Data-Nexus ZeroBaran — Baran Avisat
 
 </div>

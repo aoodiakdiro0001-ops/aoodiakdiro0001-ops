@@ -1,4 +1,4 @@
-# 🙏 الشكر والتقدير - Spatial-ZeroBaran
+# 🙏 الشكر والتقدير - Data-Nexus ZeroBaran
 
 ---
 
@@ -20,17 +20,22 @@
 
 - [Lucide React](https://lucide.dev/) - مكتبة أيقونات جميلة ومفتوحة المصدر
 
-### التقنيات ثلاثية الأبعاد
+### تقنيات البيانات
 
-- [TripoSR](https://huggingface.co/stabilityai/TripoSR) - نموذج توليد 3D من Stability AI
-- [Shap-E](https://github.com/openai/shap-e) - نموذج توليد 3D من OpenAI
-- [Blender](https://www.blender.org/) - برنامج نمذجة 3D مفتوح المصدر
+- [Pandas](https://pandas.pydata.org/) - مكتبة Python لتحليل البيانات
+- [Polars](https://pola.rs/) - مكتبة Python سريعة لتحليل البيانات
+- [NumPy](https://numpy.org/) - مكتبة Python للحسابات العلمية
+
+### الذكاء الاصطناعي
+
+- [Google Gemini](https://ai.google.dev/) - نموذج ذكاء اصطناعي من Google
+- [Groq](https://groq.com/) - منصة استضافة نماذج AI
 
 ### المنصات والخدمات
 
 - [GitHub](https://github.com/) - استضافة الكود والتعاون
-- [Hugging Face](https://huggingface.co/) - منصة نماذج الذكاء الاصطناعي
 - [Supabase](https://supabase.com/) - قاعدة بيانات مفتوحة المصدر
+- [Streamlit](https://streamlit.io/) - منصة لوحات التحكم التفاعلية
 - [Vercel](https://vercel.com/) - منصة استضافة التطبيقات
 
 ---
@@ -39,10 +44,10 @@
 
 نشكر جميع المشاريع والمبادرات التي ألهمتنا:
 
-- مشاريع الذكاء الاصطناعي مفتوحة المصدر
+- مشاريع تحليل البيانات مفتوحة المصدر
 - مجتمع المطورين العرب
-- صناع المحتوى ثلاثي الأبعاد
-- مطوري الألعاب المستقلين
+- محللي البيانات والمهندسين
+- مطوري أدوات الذكاء الاصطناعي
 
 ---
 
@@ -63,7 +68,7 @@
 
 - مطوري React و TypeScript
 - مطوري Tailwind CSS
-- مطوري Blender
+- مطوري Pandas و NumPy
 - الباحثين في مجال الذكاء الاصطناعي
 
 ---
@@ -92,7 +97,7 @@
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 Spatial-ZeroBaran. جميع الحقوق محفوظة.
+© 2025 Data-Nexus ZeroBaran. جميع الحقوق محفوظة.
 
 **شكراً لجميع من ساهم في نجاح هذا المشروع! 🙏**
 

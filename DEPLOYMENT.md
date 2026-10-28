@@ -1,4 +1,4 @@
-# 🚀 دليل النشر - Spatial-ZeroBaran
+# 🚀 دليل النشر - Data-Nexus ZeroBaran
 
 ## 📋 المتطلبات
 
@@ -13,8 +13,8 @@
 
 ```bash
 # استنساخ المشروع
-git clone https://github.com/YOUR_USERNAME/spatial-zerobaran.git
-cd spatial-zerobaran
+git clone https://github.com/YOUR_USERNAME/data-nexus-zerobaran.git
+cd data-nexus-zerobaran
 
 # تثبيت الحزم
 npm install
@@ -35,7 +35,7 @@ npm run build
 1. اذهب إلى [vercel.com](https://vercel.com)
 2. سجل دخول بحساب GitHub
 3. اضغط "Add New Project"
-4. اختر مستودع `spatial-zerobaran`
+4. اختر مستودع `data-nexus-zerobaran`
 5. اضغط "Deploy"
 
 ### الطريقة 2: عبر Vercel CLI
@@ -106,6 +106,9 @@ VITE_TELEGRAM_BOT_TOKEN=your_bot_token
 # Supabase (اختياري)
 VITE_SUPABASE_URL=your_supabase_url
 VITE_SUPABASE_ANON_KEY=your_anon_key
+
+# Google Gemini API (اختياري)
+VITE_GEMINI_API_KEY=your_gemini_api_key
 ```
 
 ---
@@ -127,6 +130,14 @@ VITE_SUPABASE_ANON_KEY=your_anon_key
 
 ---
 
+## 🧠 إعداد Google Gemini API
+
+1. اذهب إلى [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. أنشئ مفتاح API
+3. أضفه في `.env`
+
+---
+
 ## 🎨 التخصيص
 
 ### تغيير الألوان
@@ -135,7 +146,7 @@ VITE_SUPABASE_ANON_KEY=your_anon_key
 
 ```typescript
 // الألوان الأساسية
-bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500
+bg-gradient-to-br from-blue-500 via-purple-500 to-green-500
 ```
 
 ### تغيير المعلومات
@@ -221,6 +232,6 @@ npx tailwindcss init -p
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 Spatial-ZeroBaran. جميع الحقوق محفوظة.
+© 2025 Data-Nexus ZeroBaran. جميع الحقوق محفوظة.
 
 </div>

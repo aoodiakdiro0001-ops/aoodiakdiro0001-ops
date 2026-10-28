@@ -1,4 +1,4 @@
-# 🤝 مدونة السلوك - Spatial-ZeroBaran
+# 🤝 مدونة السلوك - Data-Nexus ZeroBaran
 
 ## تعهدنا
 
@@ -56,6 +56,6 @@
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 Spatial-ZeroBaran. جميع الحقوق محفوظة.
+© 2025 Data-Nexus ZeroBaran. جميع الحقوق محفوظة.
 
 </div>

@@ -1,4 +1,4 @@
-# 👥 المؤلفون والمساهمون - Spatial-ZeroBaran
+# 👥 المؤلفون والمساهمون - Data-Nexus ZeroBaran
 
 ---
 
@@ -91,6 +91,6 @@
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 Spatial-ZeroBaran. جميع الحقوق محفوظة.
+© 2025 Data-Nexus ZeroBaran. جميع الحقوق محفوظة.
 
 </div>
