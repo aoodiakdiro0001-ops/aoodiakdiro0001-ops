@@ -2,103 +2,83 @@
 
 <div align="center">
 
-![Studio-ZeroBaran](https://img.shields.io/badge/Studio-ZeroBaran-purple?style=for-the-badge)
-![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/status-Active-brightgreen?style=for-the-badge)
-![AI](https://img.shields.io/badge/AI-Powered-blue?style=for-the-badge)
-
 ### 🎨 استوديو الإنتاج المرئي والإعلاني الذاتي واللامركزي
 
-**منظومة أتمتة وإنتاج محتوى مرئي وإعلاني متكاملة بالذكاء الاصطناعي — مجاني بالكامل**
+**نصمم مشاريع عظيمة لا مثيل لها — باستخدام 8+ نماذج ذكاء اصطناعي مجانية**
 
-[🌐 زيارة الموقع](#) | [📦 المتجر](https://baranavi.gumroad.com/) | [📧 تواصل](mailto:baranavisat@gmail.com)
+![Projects](https://img.shields.io/badge/Projects-12+-purple?style=for-the-badge)
+![AI Models](https://img.shields.io/badge/AI_Models-8+-cyan?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
+![Cost](https://img.shields.io/badge/Cost-FREE-orange?style=for-the-badge)
+
+[🌐 الموقع](#) | [📦 المتجر](https://baranavi.gumroad.com/) | [📧 تواصل](mailto:baranavisat@gmail.com)
 
 </div>
 
 ---
 
-## 📖 ما هو Studio-ZeroBaran؟
+## 🎯 ما هو Studio-ZeroBaran؟
 
-هو **منظومة أتمتة وإنتاج محتوى مرئي وإعلاني متكاملة**، تأخذ منك فكرة بسيطة أو رابط منتج، وتقوم تلقائياً بتوليد:
+استوديو ذكي يجمع بين **12 مشروعاً احترافياً** و **8+ نماذج ذكاء اصطناعي مجانية** لإنتاج:
 
 - ✅ صور تسويقية احترافية (Product Mockups)
 - ✅ شعارات وهويات بصرية
-- ✅ منشورات وسائل التواصل الاجتماعي (Carousels & Banners)
-- ✅ نصوص الإعلانات والهاشتاغات
+- ✅ منشورات وسائل التواصل الاجتماعي
+- ✅ نصوص إعلانية ذكية
 - ✅ فيديوهات ترويجية قصيرة
-- ✅ نشر آلي في الأوقات المحددة
+- ✅ مؤثرات صوتية وموسيقى
+- ✅ نشر آلي مجدول
 
-**دون دفع أي اشتراك لأي أداة تصميم أو ذكاء اصطناعي مدفوع!**
-
----
-
-## 🛠️ التقنيات المستخدمة (Free Tech Stack)
-
-| المكون | التقنية | الدور |
-|--------|---------|-------|
-| 🔄 الأتمتة | GitHub Actions | مجدع التشغيل الآلي |
-| 🧠 النصوص | Google Gemini API / Groq | صياغة النصوص الإعلانية |
-| 🖼️ الصور | Hugging Face (Flux/SD) | توليد الصور الاحترافية |
-| 🎨 الدمج | Python + Pillow | تركيب النصوص والصور |
-| 💾 التخزين | Supabase | قاعدة البيانات |
-| 📱 النشر | Telegram Bot | واجهة التحكم |
-| 🌐 الواجهة | React + Vite + Tailwind | واجهة المستخدم |
+**كل هذا — بدون دفع أي اشتراك!**
 
 ---
 
-## 🏗️ البنية المعمارية
+## 🤖 أسطول الذكاء الاصطناعي
+
+| النموذج | الدور |
+|---------|-------|
+| 🧠 Google Gemini | نصوص + رؤية حاسوبية |
+| ⚡ Groq (Llama) | نصوص فائقة السرعة |
+| 🖼️ Hugging Face | توليد صور (Flux/SD) |
+| 🎨 Stable Diffusion | صور احترافية 4K |
+| 🌸 FLUX.1 | صور واقعية |
+| 🎤 Whisper | تحويل صوت لنص |
+| 🔊 Bark | تحويل نص لصوت |
+| 🔍 Real-ESRGAN | تحسين جودة الصور 4x |
+
+---
+
+## 📦 المشاريع الـ 12
+
+| # | المشروع | الحالة |
+|---|---------|--------|
+| 1 | Studio-ZeroBaran — إنتاج مرئي | 🟢 LIVE |
+| 2 | CryptoVault Pro — محفظة رقمية | 🟢 LIVE |
+| 3 | AI Copywriter — نصوص تسويقية | 🟢 LIVE |
+| 4 | DesignForge — تصميم جرافيك | 🟡 BETA |
+| 5 | SocialPilot — سوشيال ميديا | 🟡 BETA |
+| 6 | VideoGen Studio — فيديوهات | 🔜 SOON |
+| 7 | CodeMentor AI — مساعد برمجة | 🟢 LIVE |
+| 8 | DataPulse — تحليلات لحظية | 🟢 LIVE |
+| 9 | EcomBoost — أتمتة تجارة | 🟡 BETA |
+| 10 | SecureVault — إدارة كلمات مرور | 🟢 LIVE |
+| 11 | MusicLab AI — موسيقى | 🔜 SOON |
+| 12 | DocuFlow — معالجة مستندات | 🟢 LIVE |
+
+---
+
+## 🛠️ التقنيات المجانية
 
 ```
-[إرسال فكرة/منتج] → [Gemini API: نصوص + وصف بصري]
-         ↓
-[Hugging Face: توليد الصور] → [Pillow: دمج النصوص والصور]
-         ↓
-[Supabase: تخزين] → [Telegram: تسليم التصميم الجاهز]
-```
-
-### الطبقات الأربع:
-1. **طبقة الاستقبال** — بوت تليجرام + واجهة ويب
-2. **العقل التسويقي** — Gemini API للنصوص والوصف البصري
-3. **محرك التوليد** — Hugging Face + Pillow للصور والدمج
-4. **طبقة التسليم** — Supabase + Telegram
-
----
-
-## 🚀 التشغيل المحلي
-
-```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/studio-zerobaran.git
-cd studio-zerobaran
-
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-
-# Build for production
-npm run build
+GitHub Actions → Google Gemini → Hugging Face → Pillow → Supabase → Telegram
 ```
 
 ---
 
-## 📦 النشر على Vercel (مجاني)
-
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel
-```
-
----
-
-## 📞 التواصل والدعم
+## 📞 التواصل
 
 - 📧 **Email:** baranavisat@gmail.com
-- 📱 **Phone:** +90 531 326 3722
+- 📱 **Phone/WhatsApp:** +90 531 326 3722
 - 🛒 **Store:** [baranavi.gumroad.com](https://baranavi.gumroad.com/)
 
 ---
@@ -107,15 +87,9 @@ vercel
 
 | الطريقة | التفاصيل |
 |---------|----------|
-| 🏦 تحويل بنكي | ليرة تركية / دولار أمريكي |
-| ₿ بيتكوين | دفع آمن ومباشر |
-| 💎 USDT | عملات رقمية متنوعة |
-
----
-
-## 📄 الترخيص
-
-هذا المشروع مرخص تحت رخصة MIT — انظر ملف [LICENSE](LICENSE) للتفاصيل.
+| 🏦 تحويل بنكي | ليرة تركية / دولار |
+| ₿ بيتكوين | دفع آمن |
+| 💎 USDT | عملات رقمية |
 
 ---
 
@@ -123,6 +97,6 @@ vercel
 
 **صُنع بـ ❤️ وذكاء اصطناعي مجاني**
 
-© 2025 Studio-ZeroBaran. جميع الحقوق محفوظة.
+© 2025 Studio-ZeroBaran — Baran Avisat
 
 </div>
