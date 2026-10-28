@@ -1,4 +1,4 @@
-# 🙏 الشكر والتقدير - Data-Nexus ZeroBaran
+# 🙏 الشكر والتقدير - SEO-GhostBaran
 
 ---
 
@@ -20,11 +20,10 @@
 
 - [Lucide React](https://lucide.dev/) - مكتبة أيقونات جميلة ومفتوحة المصدر
 
-### تقنيات البيانات
+### تقنيات SEO
 
-- [Pandas](https://pandas.pydata.org/) - مكتبة Python لتحليل البيانات
-- [Polars](https://pola.rs/) - مكتبة Python سريعة لتحليل البيانات
-- [NumPy](https://numpy.org/) - مكتبة Python للحسابات العلمية
+- [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) - مكتبة Python لاستخراج البيانات
+- [SerpApi](https://serpapi.com/) - API لنتائج محركات البحث
 
 ### الذكاء الاصطناعي
 
@@ -35,8 +34,8 @@
 
 - [GitHub](https://github.com/) - استضافة الكود والتعاون
 - [Supabase](https://supabase.com/) - قاعدة بيانات مفتوحة المصدر
-- [Streamlit](https://streamlit.io/) - منصة لوحات التحكم التفاعلية
 - [Vercel](https://vercel.com/) - منصة استضافة التطبيقات
+- [Telegram](https://telegram.org/) - منصة المراسلة
 
 ---
 
@@ -44,9 +43,9 @@
 
 نشكر جميع المشاريع والمبادرات التي ألهمتنا:
 
-- مشاريع تحليل البيانات مفتوحة المصدر
+- مشاريع SEO مفتوحة المصدر
 - مجتمع المطورين العرب
-- محللي البيانات والمهندسين
+- خبراء التسويق الرقمي
 - مطوري أدوات الذكاء الاصطناعي
 
 ---
@@ -68,8 +67,8 @@
 
 - مطوري React و TypeScript
 - مطوري Tailwind CSS
-- مطوري Pandas و NumPy
-- الباحثين في مجال الذكاء الاصطناعي
+- مطوري BeautifulSoup
+- الباحثين في مجال SEO والذكاء الاصطناعي
 
 ---
 
@@ -97,7 +96,7 @@
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 Data-Nexus ZeroBaran. جميع الحقوق محفوظة.
+© 2025 SEO-GhostBaran. جميع الحقوق محفوظة.
 
 **شكراً لجميع من ساهم في نجاح هذا المشروع! 🙏**
 

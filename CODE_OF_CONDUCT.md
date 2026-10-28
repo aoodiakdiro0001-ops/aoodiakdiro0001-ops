@@ -1,4 +1,4 @@
-# 🤝 مدونة السلوك - Data-Nexus ZeroBaran
+# 🤝 مدونة السلوك - SEO-GhostBaran
 
 ## تعهدنا
 
@@ -56,6 +56,6 @@
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 Data-Nexus ZeroBaran. جميع الحقوق محفوظة.
+© 2025 SEO-GhostBaran. جميع الحقوق محفوظة.
 
 </div>

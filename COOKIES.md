@@ -1,4 +1,4 @@
-# 🍪 سياسة ملفات تعريف الارتباط - Data-Nexus ZeroBaran
+# 🍪 سياسة ملفات تعريف الارتباط - SEO-GhostBaran
 
 ---
 
@@ -119,6 +119,6 @@
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 Data-Nexus ZeroBaran. جميع الحقوق محفوظة.
+© 2025 SEO-GhostBaran. جميع الحقوق محفوظة.
 
 </div>

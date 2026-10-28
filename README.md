@@ -1,14 +1,14 @@
-# 📊 Data-Nexus ZeroBaran
+# 🎯 SEO-GhostBaran
 
 <div align="center">
 
-### 🧠 منظومة تحليل وهندسة البيانات الذاتية واللامركزية
+### 👻 منظومة الرصد والتجسس التسويقي ومحرك تحسين الظهور الذاتي
 
-**نظام ذكي متكامل لجمع، تنظيف، تحليل، واستخراج الرؤى من قواعد البيانات الضخمة والملفات المتعددة أوتوماتيكياً**
+**نظام ذكي متكامل لمراقبة ترتيب الكلمات المفتاحية، تتبع ظهور موقعك وموقع منافسيك في محركات البحث، وتحليل محتوى المنافسين الأكثر رواجاً**
 
-![Data Points](https://img.shields.io/badge/Data_Points-2.5M+-blue?style=for-the-badge)
-![Insights](https://img.shields.io/badge/Insights-1547+-purple?style=for-the-badge)
-![Accuracy](https://img.shields.io/badge/Accuracy-98.7%25-green?style=for-the-badge)
+![Keywords](https://img.shields.io/badge/Keywords-847+-green?style=for-the-badge)
+![Rankings](https://img.shields.io/badge/Rankings-12,547+-blue?style=for-the-badge)
+![Articles](https://img.shields.io/badge/Articles-234+-orange?style=for-the-badge)
 ![Cost](https://img.shields.io/badge/Cost-FREE-brightgreen?style=for-the-badge)
 
 [🌐 الموقع](#) | [📦 المتجر](https://baranavi.gumroad.com/) | [📧 تواصل](mailto:baranavisat@gmail.com)
@@ -17,16 +17,16 @@
 
 ---
 
-## 📖 ما هو Data-Nexus ZeroBaran؟
+## 📖 ما هو SEO-GhostBaran؟
 
 منظومة ذكية متكاملة تقوم بـ:
 
-- ✅ **جمع البيانات الذكي** — ربط مصادر بيانات متعددة (CSV, JSON, SQL, APIs)
-- ✅ **تنظيف ومعالجة تلقائية** — إزالة القيم المفقودة والشوائب برمجياً
-- ✅ **تحليل تنبؤي بالـ AI** — توقع الاتجاهات المستقبلية واستخراج التوصيات
-- ✅ **لوحات تحكم تفاعلية** — رسوم بيانية مذهلة على Streamlit Cloud
-- ✅ **تنبيهات ذكية فورية** — إشعارات على تليجرام عند الشذوذ
-- ✅ **سيادة مطلقة على البيانات** — حماية بياناتك الحساسة
+- ✅ **تتبع الكلمات المفتاحية** — مراقبة ترتيب كلماتك في محركات البحث
+- ✅ **رصد المنافسين** — تحليل محتوى المنافسين المتصدرين واكتشاف الثغرات
+- ✅ **توليد محتوى متصدر** — كتابة مقالات محسّنة بالكامل لـ SEO بالذكاء الاصطناعي
+- ✅ **تحليل الفجوات** — اكتشاف الكلمات المفتاحية السهلة للتصدر
+- ✅ **تقارير أداء أسبوعية** — تقارير مفصلة عن تقدمك مع توصيات عملية
+- ✅ **سيادة كاملة على البيانات** — جميع بيانات SEO تحت سيطرتك
 
 **كل هذا — بدون دفع دولار واحد!**
 
@@ -36,43 +36,43 @@
 
 | المكون | التقنية | الدور |
 |--------|---------|-------|
-| ⚙️ المعالجة | Python + Pandas | سحب البيانات وتنظيفها |
-| 🔄 التشغيل | GitHub Actions | تنفيذ عمليات ETL دورياً |
-| 🧠 التحليل | Google Gemini API | تحليل الاتجاهات والتوصيات |
-| 💾 التخزين | Supabase | مستودع البيانات السحابي |
-| 📊 العرض | Streamlit Cloud | لوحة تحكم تفاعلية |
-| 🔔 التنبيهات | Telegram Bot API | تقارير دورية وتنبيهات |
+| ⚙️ التشغيل | GitHub Actions | خادم مجاني ينفذ عمليات الفحص دورياً |
+| 🔍 البحث | Python + BeautifulSoup | تتبع مراكز المواقع واستخراج الكلمات |
+| 🧠 الذكاء | Google Gemini API | تحليل فجوات المحتوى وصياغة المقالات |
+| 💾 التخزين | Supabase | تخزين سجلات الترتيب عبر الزمن |
+| 📨 التقارير | Telegram Bot API | إرسال تقارير الأداء والمحتوى الجاهز |
+| 🌐 الواجهة | Vercel + Next.js | لوحة تحكم تفاعلية |
 
 ---
 
 ## 🏗️ البنية المعمارية
 
 ```
-[مصادر البيانات (CSV, JSON, SQL, APIs)]
+[تحديد الكلمات المفتاحية ومواقع المنافسين]
          ↓
-[GitHub Actions + Python (ETL Pipeline)]
+[GitHub Actions + Python (فحص دوري لنتائج البحث)]
          ↓
-[Supabase (Data Lakehouse)]
+[Google Gemini API (تحليل فجوات المحتوى)]
          ↓
-[Google Gemini API (AI Insights)]
+[Supabase (تخزين سجلات الترتيب)]
          ↓
-[Streamlit Dashboard + Telegram Bot]
+[Telegram Bot (إرسال التقرير والمحتوى)]
 ```
 
 ### الطبقات الأربع:
-1. **طبقة الجلب والمعالجة** — ETL Pipeline Layer
-2. **العقل التنبؤي** — AI Insights Core
-3. **طبقة التخزين** — Data Persistence
-4. **طبقة العرض** — Visualization & Delivery
+1. **طبقة التتبع والرصد** — Rank Tracking Layer
+2. **العقل التحليلي** — AI SEO & Content Core
+3. **طبقة الأرشيف** — Time-Series Persistence
+4. **طبقة التوصيل** — Reporting & Delivery
 
 ---
 
 ## 🎯 لماذا تحتاجه؟
 
-- 💰 **توفير مالي فلكي** — أدوات التحليل المتقدمة تكلف ثروات
-- 📈 **تحليل تنبؤي فوري** — يتوقع الاتجاهات المستقبلية
-- 🔒 **سيادة مطلقة للبيانات** — حماية بياناتك الحساسة
-- ⚡ **أتمتة كاملة** — كل شيء يعمل تلقائياً 24/7
+- 💰 **توفير مال فلكي** — أدوات SEO تكلف مئات الدولارات شهرياً
+- 🎯 **الاستباقية والتفوق** — يخبرك يومياً بتحركات ترتيبك
+- 🏆 **صناعة المحتوى المتصدر** — يكتب لك محتوى متوافق 100% مع خوارزميات البحث
+- 📈 **نتائج مضمونة** — زيادة زوار موقعك مجاناً من محركات البحث
 
 ---
 
@@ -80,8 +80,8 @@
 
 ```bash
 # Clone
-git clone https://github.com/YOUR_USERNAME/data-nexus-zerobaran.git
-cd data-nexus-zerobaran
+git clone https://github.com/YOUR_USERNAME/seo-ghostbaran.git
+cd seo-ghostbaran
 
 # Install
 npm install
@@ -120,7 +120,7 @@ npm run build
 - **AIOps-ZeroBaran** — المهندس الرقمي لإدارة الخوادم
 - **Lead-Sniper ZeroBaran** — منظومة صيد العملاء الذكية
 - **Spatial-ZeroBaran** — استوديو توليد المجسمات 3D
-- **AI Copywriter** — مولّد نصوص تسويقية ذكي
+- **Data-Nexus ZeroBaran** — منظومة تحليل وهندسة البيانات
 
 ---
 
@@ -128,6 +128,6 @@ npm run build
 
 **صُنع بـ ❤️ وذكاء اصطناعي مجاني**
 
-© 2025 Data-Nexus ZeroBaran — Baran Avisat. جميع الحقوق محفوظة.
+© 2025 SEO-GhostBaran — Baran Avisat. جميع الحقوق محفوظة.
 
 </div>

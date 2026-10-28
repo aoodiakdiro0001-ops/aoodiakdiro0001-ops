@@ -1,4 +1,4 @@
-# 👥 المؤلفون والمساهمون - Data-Nexus ZeroBaran
+# 👥 المؤلفون والمساهمون - SEO-GhostBaran
 
 ---
 
@@ -91,6 +91,6 @@
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 Data-Nexus ZeroBaran. جميع الحقوق محفوظة.
+© 2025 SEO-GhostBaran. جميع الحقوق محفوظة.
 
 </div>

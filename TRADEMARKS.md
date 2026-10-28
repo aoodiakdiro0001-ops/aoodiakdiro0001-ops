@@ -1,15 +1,15 @@
-# ™️ العلامات التجارية - Data-Nexus ZeroBaran
+# ™️ العلامات التجارية - SEO-GhostBaran
 
 ---
 
 ## 🎨 علاماتنا التجارية
 
-### Data-Nexus ZeroBaran™
+### SEO-GhostBaran™
 
 - **النوع:** علامة تجارية
 - **المالك:** Baran Avisat
 - **التسجيل:** قيد التسجيل
-- **الاستخدام:** منظومة تحليل وهندسة البيانات
+- **الاستخدام:** منظومة الرصد والتجسس التسويقي
 
 ### Studio-ZeroBaran™
 
@@ -30,19 +30,24 @@
 - **TypeScript™** - علامة تجارية لـ Microsoft Corporation
 - **Tailwind CSS™** - علامة تجارية لـ Tailwind Labs, Inc.
 - **Vite™** - علامة تجارية لـ Evan You
-- **Pandas™** - علامة تجارية لمطوري Pandas
+- **BeautifulSoup™** - علامة تجارية لمطوري BeautifulSoup
 
 ### المنصات
 
 - **GitHub™** - علامة تجارية لـ Microsoft Corporation
 - **Supabase™** - علامة تجارية لـ Supabase, Inc.
-- **Streamlit™** - علامة تجارية لـ Snowflake Inc.
 - **Vercel™** - علامة تجارية لـ Vercel, Inc.
+- **Telegram™** - علامة تجارية لـ Telegram FZ-LLC
 
 ### الذكاء الاصطناعي
 
 - **Google Gemini™** - علامة تجارية لـ Google LLC
 - **Groq™** - علامة تجارية لـ Groq, Inc.
+
+### محركات البحث
+
+- **Google Search™** - علامة تجارية لـ Google LLC
+- **Bing™** - علامة تجارية لـ Microsoft Corporation
 
 ---
 
@@ -67,6 +72,6 @@
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 Data-Nexus ZeroBaran. جميع الحقوق محفوظة.
+© 2025 SEO-GhostBaran. جميع الحقوق محفوظة.
 
 </div>

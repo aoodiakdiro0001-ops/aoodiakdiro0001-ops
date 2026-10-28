@@ -1,4 +1,4 @@
-# 🆘 دليل الدعم - Data-Nexus ZeroBaran
+# 🆘 دليل الدعم - SEO-GhostBaran
 
 ---
 
@@ -183,6 +183,6 @@
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 Data-Nexus ZeroBaran. جميع الحقوق محفوظة.
+© 2025 SEO-GhostBaran. جميع الحقوق محفوظة.
 
 </div>

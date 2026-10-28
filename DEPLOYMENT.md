@@ -1,4 +1,4 @@
-# 🚀 دليل النشر - Data-Nexus ZeroBaran
+# 🚀 دليل النشر - SEO-GhostBaran
 
 ## 📋 المتطلبات
 
@@ -13,8 +13,8 @@
 
 ```bash
 # استنساخ المشروع
-git clone https://github.com/YOUR_USERNAME/data-nexus-zerobaran.git
-cd data-nexus-zerobaran
+git clone https://github.com/YOUR_USERNAME/seo-ghostbaran.git
+cd seo-ghostbaran
 
 # تثبيت الحزم
 npm install
@@ -35,7 +35,7 @@ npm run build
 1. اذهب إلى [vercel.com](https://vercel.com)
 2. سجل دخول بحساب GitHub
 3. اضغط "Add New Project"
-4. اختر مستودع `data-nexus-zerobaran`
+4. اختر مستودع `seo-ghostbaran`
 5. اضغط "Deploy"
 
 ### الطريقة 2: عبر Vercel CLI
@@ -146,7 +146,7 @@ VITE_GEMINI_API_KEY=your_gemini_api_key
 
 ```typescript
 // الألوان الأساسية
-bg-gradient-to-br from-blue-500 via-purple-500 to-green-500
+bg-gradient-to-br from-green-500 via-blue-500 to-orange-500
 ```
 
 ### تغيير المعلومات
@@ -232,6 +232,6 @@ npx tailwindcss init -p
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 Data-Nexus ZeroBaran. جميع الحقوق محفوظة.
+© 2025 SEO-GhostBaran. جميع الحقوق محفوظة.
 
 </div>

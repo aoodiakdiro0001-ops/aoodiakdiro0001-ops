@@ -1,6 +1,6 @@
-# 🌐 دليل الترجمة - Spatial-ZeroBaran
+# 🌐 دليل الترجمة - SEO-GhostBaran
 
-شكراً لاهتمامك بترجمة Spatial-ZeroBaran! 🎉
+شكراً لاهتمامك بترجمة SEO-GhostBaran! 🎉
 
 ---
 
@@ -32,9 +32,9 @@ cp src/locales/ar.json src/locales/en.json
 ```json
 {
   "hero": {
-    "title": "حوّل أفكارك إلى",
-    "subtitle": "مجسمات 3D",
-    "description": "منظومة أتمتة ذكية..."
+    "title": "تصدّر نتائج البحث",
+    "subtitle": "بدون منافسين",
+    "description": "منظومة ذكية..."
   }
 }
 ```
@@ -69,12 +69,12 @@ npm run dev
 
 | الإنجليزية | العربية |
 |-----------|---------|
-| 3D Model | مجسم ثلاثي الأبعاد |
-| Mesh | شبكة |
-| Polygon | مضلع |
-| Texture | إكساء |
-| Render | تصيير |
-| UV Mapping | تعيين UV |
+| SEO | تحسين محركات البحث |
+| Keyword | كلمة مفتاحية |
+| Ranking | ترتيب |
+| Content | محتوى |
+| Backlinks | روابط خلفية |
+| Meta Tags | وسوم تعريفية |
 
 ---
 
@@ -148,7 +148,7 @@ npm run dev
 
 سيتم ذكر جميع المترجمين في ملف CONTRIBUTORS.md
 
-شكراً لمساعدتك في جعل Spatial-ZeroBaran متاحاً للجميع! 🌍
+شكراً لمساعدتك في جعل SEO-GhostBaran متاحاً للجميع! 🌍
 
 ---
 
@@ -156,6 +156,6 @@ npm run dev
 
 **صُنع بـ ❤️ بواسطة المجتمع**
 
-© 2025 Spatial-ZeroBaran — Baran Avisat
+© 2025 SEO-GhostBaran — Baran Avisat
 
 </div>
