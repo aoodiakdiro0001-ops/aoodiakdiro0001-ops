@@ -1,6 +1,6 @@
-# 🌐 دليل الترجمة - Pixel-ZeroBaran
+# 🌐 دليل الترجمة - Cyber-SentinelBaran
 
-شكراً لاهتمامك بترجمة Pixel-ZeroBaran! 🎉
+شكراً لاهتمامك بترجمة Cyber-SentinelBaran! 🎉
 
 ---
 
@@ -32,9 +32,9 @@ cp src/locales/ar.json src/locales/en.json
 ```json
 {
   "hero": {
-    "title": "صورك الاحترافية",
-    "subtitle": "بضغطة زر واحدة",
-    "description": "نظام ذكي..."
+    "title": "درعك السيبراني",
+    "subtitle": "الذي لا ينام",
+    "description": "منظومة ذكية..."
   }
 }
 ```
@@ -69,11 +69,12 @@ npm run dev
 
 | الإنجليزية | العربية |
 |-----------|---------|
-| Background Removal | إزالة الخلفية |
-| Relighting | إعادة الإضاءة |
-| Product Photography | تصوير المنتجات |
-| Virtual Photography | التصوير الافتراضي |
-| Bulk Processing | المعالجة بالجملة |
+| Vulnerability | ثغرة |
+| Penetration Testing | اختبار الاختراق |
+| Security Scan | فحص أمني |
+| Exploit | استغلال |
+| Patch | رقعة |
+| Firewall | جدار حماية |
 
 ---
 
@@ -147,7 +148,7 @@ npm run dev
 
 سيتم ذكر جميع المترجمين في ملف CONTRIBUTORS.md
 
-شكراً لمساعدتك في جعل Pixel-ZeroBaran متاحاً للجميع! 🌍
+شكراً لمساعدتك في جعل Cyber-SentinelBaran متاحاً للجميع! 🌍
 
 ---
 
@@ -155,6 +156,6 @@ npm run dev
 
 **صُنع بـ ❤️ بواسطة المجتمع**
 
-© 2025 Pixel-ZeroBaran — Baran Avisat
+© 2025 Cyber-SentinelBaran — Baran Avisat
 
 </div>

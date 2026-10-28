@@ -1,4 +1,4 @@
-# 🤝 مدونة السلوك - Pixel-ZeroBaran
+# 🤝 مدونة السلوك - Cyber-SentinelBaran
 
 ## تعهدنا
 
@@ -56,6 +56,6 @@
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 Pixel-ZeroBaran. جميع الحقوق محفوظة.
+© 2025 Cyber-SentinelBaran. جميع الحقوق محفوظة.
 
 </div>

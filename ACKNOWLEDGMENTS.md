@@ -1,4 +1,4 @@
-# 🙏 الشكر والتقدير - Pixel-ZeroBaran
+# 🙏 الشكر والتقدير - Cyber-SentinelBaran
 
 ---
 
@@ -20,16 +20,16 @@
 
 - [Lucide React](https://lucide.dev/) - مكتبة أيقونات جميلة ومفتوحة المصدر
 
-### تقنيات معالجة الصور
+### تقنيات الأمن السيبراني
 
-- [rembg](https://github.com/danielgatis/rembg) - مكتبة Python لإزالة الخلفيات
-- [OpenCV](https://opencv.org/) - مكتبة معالجة الصور
-- [Pillow](https://pillow.readthedocs.io/) - مكتبة Python للصور
+- [Semgrep](https://semgrep.dev/) - أداة فحص الأكواد الثابتة
+- [Nuclei](https://nuclei.projectdiscovery.io/) - أداة فحص الثغرات
+- [Nmap](https://nmap.org/) - أداة فحص الشبكات
 
 ### الذكاء الاصطناعي
 
 - [Google Gemini](https://ai.google.dev/) - نموذج ذكاء اصطناعي من Google
-- [Hugging Face](https://huggingface.co/) - منصة نماذج الذكاء الاصطناعي
+- [Groq](https://groq.com/) - منصة استضافة نماذج AI
 
 ### المنصات والخدمات
 
@@ -44,9 +44,9 @@
 
 نشكر جميع المشاريع والمبادرات التي ألهمتنا:
 
-- مشاريع معالجة الصور مفتوحة المصدر
+- مشاريع الأمن السيبراني مفتوحة المصدر
 - مجتمع المطورين العرب
-- المصورين والمصممين
+- خبراء الأمن السيبراني
 - مطوري أدوات الذكاء الاصطناعي
 
 ---
@@ -68,8 +68,8 @@
 
 - مطوري React و TypeScript
 - مطوري Tailwind CSS
-- مطوري rembg و OpenCV
-- الباحثين في مجال معالجة الصور والذكاء الاصطناعي
+- مطوري Semgrep و Nuclei
+- الباحثين في مجال الأمن السيبراني والذكاء الاصطناعي
 
 ---
 
@@ -97,7 +97,7 @@
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 Pixel-ZeroBaran. جميع الحقوق محفوظة.
+© 2025 Cyber-SentinelBaran. جميع الحقوق محفوظة.
 
 **شكراً لجميع من ساهم في نجاح هذا المشروع! 🙏**
 

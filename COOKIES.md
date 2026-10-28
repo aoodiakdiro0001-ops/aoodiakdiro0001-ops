@@ -1,4 +1,4 @@
-# 🍪 سياسة ملفات تعريف الارتباط - Pixel-ZeroBaran
+# 🍪 سياسة ملفات تعريف الارتباط - Cyber-SentinelBaran
 
 ---
 
@@ -119,6 +119,6 @@
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 Pixel-ZeroBaran. جميع الحقوق محفوظة.
+© 2025 Cyber-SentinelBaran. جميع الحقوق محفوظة.
 
 </div>

@@ -1,4 +1,4 @@
-# 🚀 دليل النشر - Pixel-ZeroBaran
+# 🚀 دليل النشر - Cyber-SentinelBaran
 
 ## 📋 المتطلبات
 
@@ -13,8 +13,8 @@
 
 ```bash
 # استنساخ المشروع
-git clone https://github.com/YOUR_USERNAME/pixel-zerobaran.git
-cd pixel-zerobaran
+git clone https://github.com/YOUR_USERNAME/cyber-sentinelbaran.git
+cd cyber-sentinelbaran
 
 # تثبيت الحزم
 npm install
@@ -35,7 +35,7 @@ npm run build
 1. اذهب إلى [vercel.com](https://vercel.com)
 2. سجل دخول بحساب GitHub
 3. اضغط "Add New Project"
-4. اختر مستودع `pixel-zerobaran`
+4. اختر مستودع `cyber-sentinelbaran`
 5. اضغط "Deploy"
 
 ### الطريقة 2: عبر Vercel CLI
@@ -109,9 +109,6 @@ VITE_SUPABASE_ANON_KEY=your_anon_key
 
 # Google Gemini API (اختياري)
 VITE_GEMINI_API_KEY=your_gemini_api_key
-
-# Hugging Face API (اختياري)
-VITE_HF_API_TOKEN=your_hf_token
 ```
 
 ---
@@ -149,7 +146,7 @@ VITE_HF_API_TOKEN=your_hf_token
 
 ```typescript
 // الألوان الأساسية
-bg-gradient-to-br from-pink-500 via-purple-500 to-cyan-500
+bg-gradient-to-br from-red-500 via-green-500 to-blue-500
 ```
 
 ### تغيير المعلومات
@@ -235,6 +232,6 @@ npx tailwindcss init -p
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 Pixel-ZeroBaran. جميع الحقوق محفوظة.
+© 2025 Cyber-SentinelBaran. جميع الحقوق محفوظة.
 
 </div>

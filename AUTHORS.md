@@ -1,4 +1,4 @@
-# 👥 المؤلفون والمساهمون - Pixel-ZeroBaran
+# 👥 المؤلفون والمساهمون - Cyber-SentinelBaran
 
 ---
 
@@ -91,6 +91,6 @@
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 Pixel-ZeroBaran. جميع الحقوق محفوظة.
+© 2025 Cyber-SentinelBaran. جميع الحقوق محفوظة.
 
 </div>

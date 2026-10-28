@@ -1,6 +1,6 @@
-# 🤝 دليل المساهمة - Pixel-ZeroBaran
+# 🤝 دليل المساهمة - Cyber-SentinelBaran
 
-شكراً لاهتمامك بالمساهمة في مشروع Pixel-ZeroBaran! 🎉
+شكراً لاهتمامك بالمساهمة في مشروع Cyber-SentinelBaran! 🎉
 
 ---
 
@@ -10,7 +10,7 @@
 
 إذا وجدت خطأً في المشروع:
 
-1. اذهب إلى [Issues](https://github.com/YOUR_USERNAME/pixel-zerobaran/issues)
+1. اذهب إلى [Issues](https://github.com/YOUR_USERNAME/cyber-sentinelbaran/issues)
 2. اضغط "New Issue"
 3. اختر "Bug Report"
 4. املأ التفاصيل بأكبر قدر ممكن
@@ -20,7 +20,7 @@
 
 إذا كان لديك فكرة لتحسين المشروع:
 
-1. اذهب إلى [Issues](https://github.com/YOUR_USERNAME/pixel-zerobaran/issues)
+1. اذهب إلى [Issues](https://github.com/YOUR_USERNAME/cyber-sentinelbaran/issues)
 2. اضغط "New Issue"
 3. اختر "Feature Request"
 4. اشرح الفكرة بوضوح
@@ -37,8 +37,8 @@
 
 2. **استنسخ المشروع**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/pixel-zerobaran.git
-   cd pixel-zerobaran
+   git clone https://github.com/YOUR_USERNAME/cyber-sentinelbaran.git
+   cd cyber-sentinelbaran
    ```
 
 3. **أنشئ فرع جديد**
@@ -182,7 +182,7 @@ npm run dev
 
 جميع المساهمين سيتم ذكرهم في ملف CONTRIBUTORS.md
 
-شكراً لمساعدتك في تحسين Pixel-ZeroBaran! 🚀
+شكراً لمساعدتك في تحسين Cyber-SentinelBaran! 🚀
 
 ---
 
@@ -190,6 +190,6 @@ npm run dev
 
 **صُنع بـ ❤️ بواسطة المجتمع**
 
-© 2025 Pixel-ZeroBaran — Baran Avisat
+© 2025 Cyber-SentinelBaran — Baran Avisat
 
 </div>

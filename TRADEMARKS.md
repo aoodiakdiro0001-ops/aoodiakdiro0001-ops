@@ -1,15 +1,15 @@
-# ™️ العلامات التجارية - Pixel-ZeroBaran
+# ™️ العلامات التجارية - Cyber-SentinelBaran
 
 ---
 
 ## 🎨 علاماتنا التجارية
 
-### Pixel-ZeroBaran™
+### Cyber-SentinelBaran™
 
 - **النوع:** علامة تجارية
 - **المالك:** Baran Avisat
 - **التسجيل:** قيد التسجيل
-- **الاستخدام:** استوديو تعديل ومعالجة الصور
+- **الاستخدام:** منظومة الفحص الأمني والحماية الذاتية
 
 ### Studio-ZeroBaran™
 
@@ -30,8 +30,9 @@
 - **TypeScript™** - علامة تجارية لـ Microsoft Corporation
 - **Tailwind CSS™** - علامة تجارية لـ Tailwind Labs, Inc.
 - **Vite™** - علامة تجارية لـ Evan You
-- **rembg™** - علامة تجارية لمطوري rembg
-- **OpenCV™** - علامة تجارية لـ OpenCV.org
+- **Semgrep™** - علامة تجارية لـ Semgrep, Inc.
+- **Nuclei™** - علامة تجارية لـ ProjectDiscovery
+- **Nmap™** - علامة تجارية لـ Nmap.org
 
 ### المنصات
 
@@ -43,7 +44,7 @@
 ### الذكاء الاصطناعي
 
 - **Google Gemini™** - علامة تجارية لـ Google LLC
-- **Hugging Face™** - علامة تجارية لـ Hugging Face, Inc.
+- **Groq™** - علامة تجارية لـ Groq, Inc.
 
 ---
 
@@ -68,6 +69,6 @@
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 Pixel-ZeroBaran. جميع الحقوق محفوظة.
+© 2025 Cyber-SentinelBaran. جميع الحقوق محفوظة.
 
 </div>
