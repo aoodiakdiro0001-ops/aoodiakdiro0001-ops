@@ -1,15 +1,15 @@
-# 🎯 Lead-Sniper ZeroBaran
+# 🎨 Spatial-ZeroBaran
 
 <div align="center">
 
-### 🏹 المنظومة الذاتية لصيد العملاء والتسويق البارد اللامركزي
+### 🧊 الاستوديو الذاتي لتوليد ومعالجة المجسمات ثلاثية الأبعاد
 
-**نظام ذكي متكامل لاكتشاف العملاء المحتملين، جمع بياناتهم، صياغة رسائل تواصل مخصصة للغاية، وإدارة خط المبيعات**
+**منظومة أتمتة ذكية تحوّل النصوص والصور إلى مجسمات 3D جاهزة للاستخدام في Unreal Engine و Unity و Blender**
 
-![Leads](https://img.shields.io/badge/Leads-1247+-orange?style=for-the-badge)
-![Conversion](https://img.shields.io/badge/Conversion-34.7%25-green?style=for-the-badge)
-![Cost](https://img.shields.io/badge/Cost-FREE-blue?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
+![Models](https://img.shields.io/badge/Models-847+-purple?style=for-the-badge)
+![Polygons](https://img.shields.io/badge/Polygons-2.5M+-pink?style=for-the-badge)
+![Time](https://img.shields.io/badge/Time-<10s-blue?style=for-the-badge)
+![Cost](https://img.shields.io/badge/Cost-FREE-green?style=for-the-badge)
 
 [🌐 الموقع](#) | [📦 المتجر](https://baranavi.gumroad.com/) | [📧 تواصل](mailto:baranavisat@gmail.com)
 
@@ -17,17 +17,17 @@
 
 ---
 
-## 📖 ما هو Lead-Sniper ZeroBaran؟
+## 📖 ما هو Spatial-ZeroBaran؟
 
-نظام ذكي مستقل يقوم بـ:
+منظومة أتمتة ذكية تقوم بـ:
 
-- ✅ **البحث عن العملاء المحتملين** — تنقيب آلي عبر منصات العمل الحر ومواقع الشركات
-- ✅ **تحليل نشاطهم ومشاريعهم** — فهم احتياجاتهم وتحدياتهم
-- ✅ **صياغة رسائل مخصصة** — Cold Outreach شديدة الاحترافية تخاطب كل عميل شخصياً
-- ✅ **إدارة خط المبيعات** — تتبع حالة كل عميل (جديد، تمت مراسلته، أبدى اهتماماً، عميل حالي)
-- ✅ **إرسال ذكي** — في الأوقات المثلى لزيادة فرص القراءة والرد
+- ✅ **توليد مجسمات 3D من صور 2D** — حوّل أي صورة إلى مجسم ثلاثي الأبعاد
+- ✅ **توليد من النصوص** — اكتب وصفاً واحصل على مجسم جاهز
+- ✅ **تقليل المضلعات تلقائياً** — من 50MB إلى 2MB مع الحفاظ على التفاصيل
+- ✅ **توليد الإكساءات** — UV Mapping وإكساءات احترافية
+- ✅ **تصدير متعدد الصيغ** — GLB, OBJ, FBX جاهزة للسحب والإسقاط
 
-**كل هذا — بدون دفع دولار واحد لأي منصة مدفوعة!**
+**كل هذا — بدون دفع دولار واحد!**
 
 ---
 
@@ -35,43 +35,43 @@
 
 | المكون | التقنية | الدور |
 |--------|---------|-------|
-| 🔍 البحث | Python + BeautifulSoup | زيارة منصات العمل الحر ومواقع الشركات |
-| ⚙️ الجدولة | GitHub Actions | تنفيذ عمليات البحث في أوقات مجدولة |
-| 🧠 التخصيص | Google Gemini API | تحليل بيانات العميل وصياغة رسالة مخصصة |
-| 💾 التخزين | Supabase | قاعدة بيانات العملاء وسجلات الحملات |
-| 📨 التنبيهات | Telegram Bot API | إرسال إشعار فوري بالعميل الجديد |
-| 🖥️ الواجهة | Vercel Dashboard | لوحة تحكم لإدارة العملاء والصفقات |
+| ⚙️ التشغيل | GitHub Actions | خوادم GPU/CPU مجانية |
+| 🧠 التوليد | TripoSR / Shap-E | نماذج AI مفتوحة المصدر |
+| 🔧 المعالجة | Blender Headless | تقليل المضلعات وتحسين الإكساء |
+| 💾 التخزين | Supabase Storage | أرشيف المكتبة |
+| 📨 الواجهة | Telegram Bot | استقبال الأوامر والتسليم |
+| ☁️ الاستضافة | Hugging Face Spaces | تشغيل النماذج المجانية |
 
 ---
 
 ## 🏗️ البنية المعمارية
 
 ```
-[تحديد معايير العميل]
+[إرسال صورة/وصف]
          ↓
-[GitHub Actions + Python Scraper (البحث الآلي)]
+[TripoSR/Shap-E: توليد مجسم 3D خام]
          ↓
-[Google Gemini API (تحليل + صياغة رسالة مخصصة)]
+[Blender Headless: تقليل المضلعات + UV Mapping]
          ↓
-[Supabase (تخزين العميل + حالة التواصل)]
+[Supabase Storage: تخزين + معاينة GIF]
          ↓
-[Telegram (إرسال مسودة الرسالة للموافقة)]
+[Telegram: رابط تنزيل مباشر]
 ```
 
 ### الطبقات الأربع:
-1. **طبقة التنقيب** — Python + BeautifulSoup + GitHub Actions
-2. **العقل الذكي** — Google Gemini API
-3. **طبقة الإدارة** — Supabase
-4. **طبقة التسليم** — Telegram Bot + Vercel
+1. **طبقة الاستقبال** — بوت تليجرام أو واجهة ويب
+2. **محرك التوليد** — TripoSR / Shap-E
+3. **محرك المعالجة** — Blender Headless
+4. **طبقة التسليم** — Supabase + Telegram
 
 ---
 
 ## 🎯 لماذا تحتاجه؟
 
-- 💰 **توفير مالي فلكي** — أدوات البحث عن العملاء تكلف مئات الدولارات شهرياً
-- 🎯 **تخصيص فائق (Hyper-Personalization)** — رسائل مخصصة ترفع نسبة الرد بشكل جنوني
-- 🔒 **سيادة وتحكم تام** — قاعدة بيانات عملائك تبقى تحت سيطرتك المطلقة
-- 📈 **نتائج مضمونة** — معدل استجابة 34%+ مقارنة بـ 1-3% في الرسائل العشوائية
+- 💰 **توفير مالي هائل** — بناء مكتبة مجسمات يكلف آلاف الدولارات
+- ⚡ **تسريع خطوط الإنتاج** — أسابيع من النمذجة إلى دقائق
+- 🔧 **أتمتة التنظيف** — تحسين أداء المجسمات تلقائياً
+- 🔒 **ملكية تجارية كاملة** — استخدم في مشاريعك بدون قيود
 
 ---
 
@@ -79,8 +79,8 @@
 
 ```bash
 # Clone
-git clone https://github.com/YOUR_USERNAME/lead-sniper-zerobaran.git
-cd lead-sniper-zerobaran
+git clone https://github.com/YOUR_USERNAME/spatial-zerobaran.git
+cd spatial-zerobaran
 
 # Install
 npm install
@@ -117,9 +117,9 @@ npm run build
 - **Studio-ZeroBaran** — استوديو الإنتاج المرئي والإعلاني
 - **PolyGlot-StreamBaran** — منظومة الترجمة والدبلجة الصوتية
 - **AIOps-ZeroBaran** — المهندس الرقمي لإدارة الخوادم
+- **Lead-Sniper ZeroBaran** — منظومة صيد العملاء الذكية
 - **CryptoVault Pro** — محفظة رقمية متعددة السلاسل
 - **AI Copywriter** — مولّد نصوص تسويقية ذكي
-- **DesignForge** — مصمم جرافيك آلي
 
 ---
 
@@ -127,6 +127,6 @@ npm run build
 
 **صُنع بـ ❤️ وذكاء اصطناعي مجاني**
 
-© 2025 Lead-Sniper ZeroBaran — Baran Avisat. جميع الحقوق محفوظة.
+© 2025 Spatial-ZeroBaran — Baran Avisat. جميع الحقوق محفوظة.
 
 </div>
