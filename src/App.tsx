@@ -1,23 +1,23 @@
 import { useState, useEffect } from 'react';
 import {
-  Zap, Server, Shield, AlertTriangle, CheckCircle, Activity,
-  Mail, Phone, ShoppingBag, Clock, Sparkles,
-  ArrowRight, Star, Code, Workflow, Database, Cloud,
+  Zap, Target, Users, Mail, MessageSquare, TrendingUp,
+  CheckCircle, Star, Code, Workflow, Database, Cloud,
   Github, ExternalLink, Menu, X, Hexagon, Brain, Cpu,
-  ArrowUpRight, Terminal, GitBranch, Layers, Lock,
-  Gauge, Radio, Bell, Wrench, FileText, RefreshCw,
-  TrendingUp, AlertCircle, Circle, Play, Pause,
-  ChevronRight, BarChart3, Eye, Globe
+  ArrowUpRight, Terminal, Layers, Lock, Eye, Search,
+  FileText, RefreshCw, DollarSign, UserCheck, Send,
+  ChevronRight, BarChart3, Crosshair, Sparkles,
+  ArrowRight, Shield, Clock, ShoppingBag, Phone,
+  Globe, Server
 } from 'lucide-react';
 
 // ============ ANIMATED BACKGROUND ============
 function AnimatedBackground() {
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden">
-      <div className="absolute inset-0 bg-[#020617]"></div>
-      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-emerald-600/8 rounded-full filter blur-[180px] animate-pulse"></div>
-      <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-blue-600/8 rounded-full filter blur-[180px] animate-pulse" style={{ animationDelay: '2s' }}></div>
-      <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-red-600/5 rounded-full filter blur-[150px] animate-pulse" style={{ animationDelay: '4s' }}></div>
+      <div className="absolute inset-0 bg-[#0a0a0f]"></div>
+      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-orange-600/8 rounded-full filter blur-[180px] animate-pulse"></div>
+      <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-green-600/8 rounded-full filter blur-[180px] animate-pulse" style={{ animationDelay: '2s' }}></div>
+      <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-yellow-600/5 rounded-full filter blur-[150px] animate-pulse" style={{ animationDelay: '4s' }}></div>
       <div className="absolute inset-0 opacity-[0.02]" style={{
         backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)',
         backgroundSize: '60px 60px'
@@ -47,18 +47,18 @@ function Navbar() {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-[#020617]/80 backdrop-blur-2xl border-b border-white/5 shadow-2xl shadow-emerald-500/5' : ''}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-[#0a0a0f]/80 backdrop-blur-2xl border-b border-white/5 shadow-2xl shadow-orange-500/5' : ''}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3 group">
           <div className="relative">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 via-blue-500 to-purple-500 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <Server className="w-5 h-5 text-white" />
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 via-red-500 to-yellow-500 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <Crosshair className="w-5 h-5 text-white" />
             </div>
-            <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-emerald-500 via-blue-500 to-purple-500 blur-lg opacity-50 group-hover:opacity-80 transition-opacity"></div>
+            <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-orange-500 via-red-500 to-yellow-500 blur-lg opacity-50 group-hover:opacity-80 transition-opacity"></div>
           </div>
           <div>
-            <span className="font-black text-white text-sm sm:text-base block leading-none">AIOps</span>
-            <span className="text-[10px] text-emerald-400 font-medium tracking-widest">ZEROBARAN</span>
+            <span className="font-black text-white text-sm sm:text-base block leading-none">Lead-Sniper</span>
+            <span className="text-[10px] text-orange-400 font-medium tracking-widest">ZEROBARAN</span>
           </div>
         </a>
 
@@ -68,7 +68,7 @@ function Navbar() {
               {link.label}
             </a>
           ))}
-          <a href="https://baranavi.gumroad.com/" target="_blank" rel="noopener noreferrer" className="mr-2 bg-gradient-to-r from-emerald-600 to-blue-600 text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:shadow-lg hover:shadow-emerald-500/30 transition-all flex items-center gap-2">
+          <a href="https://baranavi.gumroad.com/" target="_blank" rel="noopener noreferrer" className="mr-2 bg-gradient-to-r from-orange-600 to-red-600 text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:shadow-lg hover:shadow-orange-500/30 transition-all flex items-center gap-2">
             <ShoppingBag className="w-4 h-4" />
             المتجر
           </a>
@@ -80,13 +80,13 @@ function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="lg:hidden bg-[#020617]/95 backdrop-blur-2xl border-b border-white/5 px-4 py-4 space-y-1">
+        <div className="lg:hidden bg-[#0a0a0f]/95 backdrop-blur-2xl border-b border-white/5 px-4 py-4 space-y-1">
           {links.map((link) => (
             <a key={link.href} href={link.href} onClick={() => setIsOpen(false)} className="block text-gray-300 hover:text-white py-3 px-4 rounded-lg hover:bg-white/5">
               {link.label}
             </a>
           ))}
-          <a href="https://baranavi.gumroad.com/" target="_blank" rel="noopener noreferrer" className="block bg-gradient-to-r from-emerald-600 to-blue-600 text-white px-4 py-3 rounded-xl text-center font-bold mt-2">
+          <a href="https://baranavi.gumroad.com/" target="_blank" rel="noopener noreferrer" className="block bg-gradient-to-r from-orange-600 to-red-600 text-white px-4 py-3 rounded-xl text-center font-bold mt-2">
             زيارة المتجر
           </a>
         </div>
@@ -97,15 +97,16 @@ function Navbar() {
 
 // ============ HERO SECTION ============
 function HeroSection() {
-  const [uptime, setUptime] = useState(99.99);
-  const [responseTime, setResponseTime] = useState(4);
-  const [servers, setServers] = useState(24);
+  const [leads, setLeads] = useState(0);
+  const [conversion, setConversion] = useState(0);
+  const [revenue, setRevenue] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setResponseTime(Math.floor(Math.random() * 3) + 2);
-      setServers(Math.floor(Math.random() * 5) + 22);
-    }, 3000);
+      setLeads(prev => Math.min(prev + Math.floor(Math.random() * 3) + 1, 1247));
+      setConversion(prev => Math.min(prev + Math.random() * 0.1, 34.7));
+      setRevenue(prev => Math.min(prev + Math.floor(Math.random() * 500) + 100, 125000));
+    }, 100);
     return () => clearInterval(interval);
   }, []);
 
@@ -113,38 +114,38 @@ function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20">
         <div className="text-center">
-          {/* Status Badge */}
-          <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-5 py-2.5 mb-8 backdrop-blur-sm">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-5 py-2.5 mb-8 backdrop-blur-sm">
             <div className="relative">
-              <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
-              <div className="absolute inset-0 w-2 h-2 bg-emerald-400 rounded-full animate-ping"></div>
+              <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+              <div className="absolute inset-0 w-2 h-2 bg-orange-400 rounded-full animate-ping"></div>
             </div>
-            <span className="text-gray-300 text-sm font-medium">جميع الأنظمة تعمل — Self-Healing Active</span>
+            <span className="text-gray-300 text-sm font-medium">صيد العملاء نشط — 24/7</span>
           </div>
 
           {/* Main Title */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 tracking-tight leading-[1.1]">
-            المهندس الرقمي
+            اصطي عملاءك
             <br />
-            <span className="bg-gradient-to-r from-emerald-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-              الذي لا ينام
+            <span className="bg-gradient-to-r from-orange-400 via-red-400 to-yellow-400 bg-clip-text text-transparent">
+              بالذكاء الاصطناعي
             </span>
           </h1>
 
           <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
-            نظام ذكي مستقل يراقب خوادمك 24/7، يكتشف الأعطال فوراً، <span className="text-emerald-400 font-semibold">يشخص السبب الجذري بالذكاء الاصطناعي</span>، ويصلحها ذاتياً — <span className="text-blue-400 font-semibold">قبل أن يلاحظ عملاؤك أي انقطاع</span>
+            نظام ذكي مستقل يبحث عن عملائك المحتملين، <span className="text-orange-400 font-semibold">يحلل نشاطهم ومشاريعهم</span>، ويكتب رسائل تواصل مخصصة للغاية ترفع نسبة الاستجابة — <span className="text-green-400 font-semibold">بدون دفع دولار واحد</span>
           </p>
 
           {/* CTA */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <a href="#demo" className="group relative bg-gradient-to-r from-emerald-600 to-blue-600 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-emerald-500/30 transition-all duration-300 flex items-center gap-3">
-              <Activity className="w-5 h-5" />
-              شاهد التجربة الحية
+            <a href="#demo" className="group relative bg-gradient-to-r from-orange-600 to-red-600 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-orange-500/30 transition-all duration-300 flex items-center gap-3">
+              <Target className="w-5 h-5" />
+              شاهد الصيد الحي
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-emerald-600 to-blue-600 blur-xl opacity-50 group-hover:opacity-80 transition-opacity -z-10"></div>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-orange-600 to-red-600 blur-xl opacity-50 group-hover:opacity-80 transition-opacity -z-10"></div>
             </a>
-            <a href="https://baranavi.gumroad.com/" target="_blank" rel="noopener noreferrer" className="border border-white/10 text-gray-300 px-8 py-4 rounded-2xl font-bold text-lg hover:border-emerald-500/50 hover:text-white transition-all duration-300 flex items-center gap-2 backdrop-blur-sm">
-              <Shield className="w-5 h-5" />
+            <a href="https://baranavi.gumroad.com/" target="_blank" rel="noopener noreferrer" className="border border-white/10 text-gray-300 px-8 py-4 rounded-2xl font-bold text-lg hover:border-orange-500/50 hover:text-white transition-all duration-300 flex items-center gap-2 backdrop-blur-sm">
+              <DollarSign className="w-5 h-5" />
               احصل عليه
             </a>
           </div>
@@ -152,19 +153,19 @@ function HeroSection() {
           {/* Live Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
             <div className="bg-white/5 border border-white/10 rounded-2xl p-4 backdrop-blur-sm">
-              <div className="text-2xl md:text-3xl font-black text-emerald-400">{uptime}%</div>
-              <div className="text-xs md:text-sm text-gray-500 mt-1">وقت التشغيل</div>
+              <div className="text-2xl md:text-3xl font-black text-orange-400">{Math.floor(leads)}</div>
+              <div className="text-xs md:text-sm text-gray-500 mt-1">عميل محتمل</div>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-2xl p-4 backdrop-blur-sm">
-              <div className="text-2xl md:text-3xl font-black text-blue-400">&lt;{responseTime}s</div>
-              <div className="text-xs md:text-sm text-gray-500 mt-1">زمن الإصلاح</div>
+              <div className="text-2xl md:text-3xl font-black text-green-400">{conversion.toFixed(1)}%</div>
+              <div className="text-xs md:text-sm text-gray-500 mt-1">معدل الاستجابة</div>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-2xl p-4 backdrop-blur-sm">
-              <div className="text-2xl md:text-3xl font-black text-purple-400">{servers}</div>
-              <div className="text-xs md:text-sm text-gray-500 mt-1">خادم تحت المراقبة</div>
+              <div className="text-2xl md:text-3xl font-black text-yellow-400">${Math.floor(revenue).toLocaleString()}</div>
+              <div className="text-xs md:text-sm text-gray-500 mt-1">إيرادات مولّدة</div>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-2xl p-4 backdrop-blur-sm">
-              <div className="text-2xl md:text-3xl font-black text-yellow-400">0$</div>
+              <div className="text-2xl md:text-3xl font-black text-blue-400">0$</div>
               <div className="text-xs md:text-sm text-gray-500 mt-1">تكلفة التشغيل</div>
             </div>
           </div>
@@ -178,46 +179,46 @@ function HeroSection() {
 function FeaturesSection() {
   const features = [
     {
-      icon: <Eye className="w-7 h-7" />,
-      title: 'مراقبة مستمرة 24/7',
-      desc: 'فحص دوري لكل خادم وخدمة كل بضع دقائق — Ping, HTTP, TCP, DNS',
-      gradient: 'from-emerald-500 to-green-500',
-      glow: 'bg-emerald-500/20',
-    },
-    {
-      icon: <Brain className="w-7 h-7" />,
-      title: 'تشخيص ذكي بالـ AI',
-      desc: 'تحليل سجلات الأخطاء وتحديد السبب الجذري بدقة عبر Groq/Gemini',
-      gradient: 'from-blue-500 to-cyan-500',
-      glow: 'bg-blue-500/20',
-    },
-    {
-      icon: <Wrench className="w-7 h-7" />,
-      title: 'إصلاح ذاتي (Self-Healing)',
-      desc: 'تنفيذ أوامر الإصلاح تلقائياً — إعادة تشغيل، تنظيف ذاكرة، تبديل خادم',
-      gradient: 'from-purple-500 to-pink-500',
-      glow: 'bg-purple-500/20',
-    },
-    {
-      icon: <Bell className="w-7 h-7" />,
-      title: 'تنبيهات فورية',
-      desc: 'تقارير تفصيلية على تليجرام مع أزرار تحكم يدوي عند الحاجة',
+      icon: <Search className="w-7 h-7" />,
+      title: 'تنقيب آلي عن العملاء',
+      desc: 'بحث تلقائي عن الشركات والأفراد المطابقين لمعاييرك عبر منصات العمل الحر ومواقع الشركات',
       gradient: 'from-orange-500 to-red-500',
       glow: 'bg-orange-500/20',
     },
     {
+      icon: <Brain className="w-7 h-7" />,
+      title: 'تخصيص فائق بالـ AI',
+      desc: 'تحليل نشاط العميل ومشاريعه الأخيرة لكتابة رسالة تواصل مخصصة تخاطبه شخصياً',
+      gradient: 'from-red-500 to-pink-500',
+      glow: 'bg-red-500/20',
+    },
+    {
+      icon: <Mail className="w-7 h-7" />,
+      title: 'رسائل باردة احترافية',
+      desc: 'صياغة Cold Outreach شديدة الاحترافية ترفع نسبة الرد بشكل جنوني',
+      gradient: 'from-yellow-500 to-orange-500',
+      glow: 'bg-yellow-500/20',
+    },
+    {
       icon: <BarChart3 className="w-7 h-7" />,
-      title: 'تحليلات وإحصائيات',
-      desc: 'سجلات كاملة للحوادث والإجراءات مع رسوم بيانية للأداء',
-      gradient: 'from-cyan-500 to-teal-500',
-      glow: 'bg-cyan-500/20',
+      title: 'إدارة خط المبيعات',
+      desc: 'تتبع حالة كل عميل (جديد، تمت مراسلته، أبدى اهتماماً، عميل حالي) بوضوح تام',
+      gradient: 'from-green-500 to-emerald-500',
+      glow: 'bg-green-500/20',
+    },
+    {
+      icon: <Clock className="w-7 h-7" />,
+      title: 'جدولة ذكية',
+      desc: 'إرسال الرسائل في الأوقات المثلى لزيادة فرص القراءة والرد',
+      gradient: 'from-blue-500 to-cyan-500',
+      glow: 'bg-blue-500/20',
     },
     {
       icon: <Lock className="w-7 h-7" />,
-      title: 'أمان وسيادة كاملة',
-      desc: 'معالجة محلية عبر مكتبات مفتوحة المصدر — لا تسريب لبياناتك',
-      gradient: 'from-indigo-500 to-purple-500',
-      glow: 'bg-indigo-500/20',
+      title: 'سيادة كاملة على بياناتك',
+      desc: 'قاعدة بيانات عملائك وسجلات التواصل تبقى تحت سيطرتك المطلقة',
+      gradient: 'from-purple-500 to-indigo-500',
+      glow: 'bg-purple-500/20',
     },
   ];
 
@@ -225,15 +226,15 @@ function FeaturesSection() {
     <section id="features" className="py-24 px-4 relative">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-5 py-2 mb-6">
-            <Shield className="w-4 h-4 text-emerald-400" />
-            <span className="text-emerald-300 text-sm font-medium">القدرات</span>
+          <div className="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-5 py-2 mb-6">
+            <Target className="w-4 h-4 text-orange-400" />
+            <span className="text-orange-300 text-sm font-medium">القدرات</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-black text-white mb-4">
-            مهندس سحابي <span className="bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent">لا ينام</span>
+            صياد عملاء <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">لا يرحم</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            6 قدرات أساسية تعمل بتناغم لضمان تشغيل خدماتك دون انقطاع
+            6 قدرات أساسية تعمل بتناغم لاصطياد العملاء وتحويلهم لصفقات
           </p>
         </div>
 
@@ -259,45 +260,45 @@ function HowItWorksSection() {
   const steps = [
     {
       num: '01',
-      icon: <Activity className="w-6 h-6" />,
-      title: 'الرصد المستمر',
-      desc: 'GitHub Actions و Cloudflare Workers يفحصون خوادمك كل بضع دقائق',
-      color: 'from-emerald-500 to-green-500',
-    },
-    {
-      num: '02',
-      icon: <AlertTriangle className="w-6 h-6" />,
-      title: 'اكتشاف العطل',
-      desc: 'عند ظهور كود خطأ (500/502) أو انقطاع، تبدأ خطة الطوارئ فوراً',
+      icon: <Target className="w-6 h-6" />,
+      title: 'تحديد معايير العميل',
+      desc: 'تحدد الصناعة، الموقع، نوع الخدمة، أو أي معايير أخرى لعميلك المثالي',
       color: 'from-orange-500 to-red-500',
     },
     {
+      num: '02',
+      icon: <Search className="w-6 h-6" />,
+      title: 'البحث والتنقيب الآلي',
+      desc: 'GitHub Actions + Python Scraper يمشط المواقع والمنصات لجمع 20+ عميل مطابق',
+      color: 'from-red-500 to-pink-500',
+    },
+    {
       num: '03',
-      icon: <FileText className="w-6 h-6" />,
-      title: 'جلب السجلات',
-      desc: 'سحب آخر 100 سطر من Error Logs لإرسالها للتحليل',
-      color: 'from-blue-500 to-cyan-500',
+      icon: <Brain className="w-6 h-6" />,
+      title: 'التحليل والتخصيص',
+      desc: 'Gemini API يحلل كل عميل ويكتب رسالة تواصل فريدة تخاطبه شخصياً',
+      color: 'from-yellow-500 to-orange-500',
     },
     {
       num: '04',
-      icon: <Brain className="w-6 h-6" />,
-      title: 'التشخيص الذكي',
-      desc: 'Groq/Gemini يحلل السجلات، يحدد السبب، ويولّد أوامر الإصلاح',
-      color: 'from-purple-500 to-pink-500',
+      icon: <Database className="w-6 h-6" />,
+      title: 'تخزين في Supabase',
+      desc: 'حفظ بيانات العميل وحالة التواصل في قاعدة بيانات منظمة',
+      color: 'from-green-500 to-emerald-500',
     },
     {
       num: '05',
-      icon: <Wrench className="w-6 h-6" />,
-      title: 'الإصلاح الذاتي',
-      desc: 'تنفيذ الأوامر آلياً عبر SSH/Webhooks — إعادة تشغيل، تنظيف، تبديل',
-      color: 'from-cyan-500 to-emerald-500',
+      icon: <Send className="w-6 h-6" />,
+      title: 'إرسال لتليجرام',
+      desc: 'مسودة الرسالة الجاهزة تصلك على هاتفك مع أزرار: إرسال فوري | تعديل',
+      color: 'from-blue-500 to-cyan-500',
     },
     {
       num: '06',
-      icon: <Bell className="w-6 h-6" />,
-      title: 'التقرير والتنبيه',
-      desc: 'إرسال تقرير كامل لتليجرام + حفظ الحادثة في Supabase',
-      color: 'from-pink-500 to-purple-500',
+      icon: <DollarSign className="w-6 h-6" />,
+      title: 'تحويل لصفقة',
+      desc: 'بضغطة زر واحدة ترسل الرسالة وتبدأ بجلب عقود جديدة لعملك',
+      color: 'from-emerald-500 to-green-500',
     },
   ];
 
@@ -305,15 +306,15 @@ function HowItWorksSection() {
     <section id="how-it-works" className="py-24 px-4 relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-5 py-2 mb-6">
-            <Workflow className="w-4 h-4 text-blue-400" />
-            <span className="text-blue-300 text-sm font-medium">آلية العمل</span>
+          <div className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/20 rounded-full px-5 py-2 mb-6">
+            <Workflow className="w-4 h-4 text-red-400" />
+            <span className="text-red-300 text-sm font-medium">آلية العمل</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-black text-white mb-4">
-            من <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">العطل</span> إلى <span className="bg-gradient-to-r from-emerald-400 to-green-400 bg-clip-text text-transparent">الإصلاح</span>
+            من <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">البحث</span> إلى <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">الصفقة</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            6 خطوات فقط — من اكتشاف العطل إلى الإصلاح الكامل في ثوانٍ
+            6 خطوات فقط — من تحديد المعايير إلى جلب عقود جديدة
           </p>
         </div>
 
@@ -328,9 +329,6 @@ function HowItWorksSection() {
               </div>
               <h3 className="text-lg font-bold text-white mb-2">{step.title}</h3>
               <p className="text-gray-400 text-sm">{step.desc}</p>
-              {i < steps.length - 1 && (
-                <ChevronRight className="absolute top-6 left-4 w-4 h-4 text-gray-700 hidden lg:block" />
-              )}
             </div>
           ))}
         </div>
@@ -341,21 +339,21 @@ function HowItWorksSection() {
 
 // ============ LIVE DEMO SECTION ============
 function DemoSection() {
-  const [isMonitoring, setIsMonitoring] = useState(false);
+  const [isHunting, setIsHunting] = useState(false);
   const [stage, setStage] = useState(0);
   const [logs, setLogs] = useState<string[]>([]);
 
   const stages = [
-    { status: 'monitoring', color: 'text-emerald-400', icon: <Activity className="w-4 h-4" />, text: '🟢 جميع الخوادم تعمل بشكل طبيعي...' },
-    { status: 'alert', color: 'text-orange-400', icon: <AlertTriangle className="w-4 h-4" />, text: '⚠️ تنبيه: ارتفاع في استهلاك CPU على الخادم #3' },
-    { status: 'error', color: 'text-red-400', icon: <AlertCircle className="w-4 h-4" />, text: '🔴 عطل: توقف خدمة nginx على المنفذ 443' },
-    { status: 'diagnosing', color: 'text-blue-400', icon: <Brain className="w-4 h-4" />, text: '🧠 AI يحلل السجلات... اكتشاف: امتلاء الذاكرة المؤقتة' },
-    { status: 'fixing', color: 'text-purple-400', icon: <Wrench className="w-4 h-4" />, text: '🔧 تنفيذ الإصلاح: redis-cli flushall && systemctl restart nginx' },
-    { status: 'fixed', color: 'text-emerald-400', icon: <CheckCircle className="w-4 h-4" />, text: '✅ تم الإصلاح بنجاح! الخدمة عادت للعمل خلال 3.2 ثانية' },
+    { status: 'scanning', color: 'text-orange-400', text: '🔍 جاري البحث عن عملاء محتملين في مجال التجارة الإلكترونية...' },
+    { status: 'found', color: 'text-green-400', text: '✅ تم العثور على 23 شركة ناشئة بدون مواقع حديثة' },
+    { status: 'analyzing', color: 'text-blue-400', text: '🧠 AI يحلل نشاط الشركة "TechStore" وآخر منشوراتهم...' },
+    { status: 'writing', color: 'text-purple-400', text: '✍️ صياغة رسالة مخصصة تخاطب مشكلة تحسين الأداء...' },
+    { status: 'ready', color: 'text-yellow-400', text: '📧 الرسالة جاهزة: "مرحباً، لاحظت أن موقعكم يحتاج لتحسين سرعة التحميل..."' },
+    { status: 'sent', color: 'text-green-400', text: '🎯 تم إرسال الرسالة! احتمال الرد: 67% بناءً على التخصيص' },
   ];
 
   const handleStart = () => {
-    setIsMonitoring(true);
+    setIsHunting(true);
     setStage(0);
     setLogs([]);
 
@@ -366,7 +364,7 @@ function DemoSection() {
       setLogs(prev => [...prev, stages[currentStage].text]);
       if (currentStage >= stages.length - 1) {
         clearInterval(timer);
-        setTimeout(() => setIsMonitoring(false), 2000);
+        setTimeout(() => setIsHunting(false), 2000);
       }
     }, 1500);
   };
@@ -376,13 +374,13 @@ function DemoSection() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/20 rounded-full px-5 py-2 mb-6">
-            <Activity className="w-4 h-4 text-red-400" />
+            <Crosshair className="w-4 h-4 text-red-400" />
             <span className="text-red-300 text-sm font-medium">محاكاة حية</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
-            شاهد <span className="bg-gradient-to-r from-red-400 to-emerald-400 bg-clip-text text-transparent">الإصلاح الذاتي</span>
+            شاهد <span className="bg-gradient-to-r from-orange-400 to-green-400 bg-clip-text text-transparent">الصيد الحي</span>
           </h2>
-          <p className="text-gray-400 text-lg">محاكاة حية لكيفية تعامل النظام مع عطل حقيقي</p>
+          <p className="text-gray-400 text-lg">محاكاة حية لكيفية اصطياد النظام لعميل محتمل</p>
         </div>
 
         <div className="bg-white/[0.03] border border-white/10 rounded-3xl overflow-hidden">
@@ -393,7 +391,7 @@ function DemoSection() {
               <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
               <div className="w-3 h-3 rounded-full bg-green-500"></div>
             </div>
-            <span className="text-xs text-gray-500 font-mono">aiops-zerobaran ~ monitoring</span>
+            <span className="text-xs text-gray-500 font-mono">lead-sniper ~ hunting</span>
             <Terminal className="w-4 h-4 text-gray-500" />
           </div>
 
@@ -401,8 +399,8 @@ function DemoSection() {
           <div className="p-6 font-mono text-sm min-h-[300px]">
             {logs.length === 0 ? (
               <div className="text-gray-500">
-                <p>$ aiops-monitor --start</p>
-                <p className="mt-2 text-gray-600">Press the button to start live simulation...</p>
+                <p>$ lead-sniper --start-hunt</p>
+                <p className="mt-2 text-gray-600">Press the button to start live hunting simulation...</p>
               </div>
             ) : (
               <div className="space-y-2">
@@ -412,9 +410,9 @@ function DemoSection() {
                     <span>{log}</span>
                   </div>
                 ))}
-                {isMonitoring && (
+                {isHunting && (
                   <div className="flex items-center gap-2 text-gray-500">
-                    <div className="w-2 h-4 bg-emerald-400 animate-pulse"></div>
+                    <div className="w-2 h-4 bg-orange-400 animate-pulse"></div>
                   </div>
                 )}
               </div>
@@ -425,18 +423,18 @@ function DemoSection() {
           <div className="border-t border-white/10 p-4 bg-gray-900/30">
             <button
               onClick={handleStart}
-              disabled={isMonitoring}
-              className="w-full bg-gradient-to-r from-emerald-600 to-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:shadow-lg hover:shadow-emerald-500/30 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              disabled={isHunting}
+              className="w-full bg-gradient-to-r from-orange-600 to-red-600 text-white px-6 py-3 rounded-xl font-bold hover:shadow-lg hover:shadow-orange-500/30 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
             >
-              {isMonitoring ? (
+              {isHunting ? (
                 <>
                   <RefreshCw className="w-5 h-5 animate-spin" />
-                  جاري المعالجة...
+                  جاري الصيد...
                 </>
               ) : (
                 <>
-                  <Play className="w-5 h-5" />
-                  بدء المحاكاة
+                  <Target className="w-5 h-5" />
+                  بدء الصيد
                 </>
               )}
             </button>
@@ -451,46 +449,46 @@ function DemoSection() {
 function TechStackSection() {
   const techs = [
     {
+      icon: <Search className="w-6 h-6" />,
+      name: 'Python + BeautifulSoup',
+      role: 'محرك البحث والجمع',
+      desc: 'زيارة منصات العمل الحر ومواقع الشركات لجمع بيانات العملاء',
+      color: 'from-orange-600 to-red-600',
+    },
+    {
       icon: <Github className="w-6 h-6" />,
       name: 'GitHub Actions',
-      role: 'محرك الرصد والقياس',
-      desc: 'خادم مجاني يفحص حالة المواقع والـ APIs دورياً',
+      role: 'محرك الجدولة',
+      desc: 'تنفيذ عمليات البحث وإرسال الحملات في أوقات مجدولة',
       color: 'from-gray-600 to-gray-700',
     },
     {
-      icon: <Cloud className="w-6 h-6" />,
-      name: 'Cloudflare Workers',
-      role: 'بوابة الاستقبال والسجلات',
-      desc: 'استقبال إشارات الصحة وسجلات الأخطاء بسرعة',
-      color: 'from-orange-600 to-amber-600',
-    },
-    {
       icon: <Brain className="w-6 h-6" />,
-      name: 'Groq / Gemini API',
-      role: 'محرك التشخيص الذكي',
-      desc: 'تحليل السجلات واكتشاف السبب وتوليد الإصلاح',
+      name: 'Google Gemini API',
+      role: 'العقل الذكي',
+      desc: 'تحليل بيانات العميل وصياغة رسالة تواصل مخصصة وفريدة',
       color: 'from-blue-600 to-cyan-600',
     },
     {
       icon: <Database className="w-6 h-6" />,
-      name: 'Turso / Supabase',
-      role: 'قاعدة البيانات والسجلات',
-      desc: 'تخزين سجلات التشغيل والحوادث والإجراءات',
+      name: 'Supabase',
+      role: 'قاعدة البيانات',
+      desc: 'تخزين قائمة العملاء وحالة التواصل وسجلات الحملات',
       color: 'from-emerald-600 to-green-600',
     },
     {
-      icon: <Bell className="w-6 h-6" />,
+      icon: <Send className="w-6 h-6" />,
       name: 'Telegram Bot API',
-      role: 'التنبيهات والأوامر',
-      desc: 'إرسال التقارير الفورية وتنفيذ أوامر يدوية',
+      role: 'قناة التنبيهات',
+      desc: 'إرسال إشعار فوري بالعميل الجديد ورسالته الجاهزة',
       color: 'from-sky-600 to-blue-600',
     },
     {
-      icon: <Terminal className="w-6 h-6" />,
-      name: 'Python + SSH',
-      role: 'تنفيذ الإصلاحات',
-      desc: 'سكريبتات تنفيذ أوامر الإصلاح عبر SSH/Webhooks',
-      color: 'from-yellow-600 to-orange-600',
+      icon: <Cloud className="w-6 h-6" />,
+      name: 'Vercel Dashboard',
+      role: 'واجهة التحكم',
+      desc: 'لوحة تحكم لإدارة العملاء والصفقات',
+      color: 'from-gray-700 to-gray-800',
     },
   ];
 
@@ -498,12 +496,12 @@ function TechStackSection() {
     <section id="tech" className="py-24 px-4 relative">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/20 rounded-full px-5 py-2 mb-6">
-            <Code className="w-4 h-4 text-purple-400" />
-            <span className="text-purple-300 text-sm font-medium">التقنيات المجانية</span>
+          <div className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 rounded-full px-5 py-2 mb-6">
+            <Code className="w-4 h-4 text-green-400" />
+            <span className="text-green-300 text-sm font-medium">التقنيات المجانية</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-black text-white mb-4">
-            <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">The Free Tech Stack</span>
+            <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">The Free Tech Stack</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             6 تقنيات مجانية بالكامل — صفر دولار تكلفة تشغيل
@@ -517,7 +515,7 @@ function TechStackSection() {
                 {tech.icon}
               </div>
               <h4 className="font-bold text-white text-sm mb-1">{tech.name}</h4>
-              <p className="text-xs text-emerald-400 font-medium mb-2">{tech.role}</p>
+              <p className="text-xs text-orange-400 font-medium mb-2">{tech.role}</p>
               <p className="text-xs text-gray-500 leading-relaxed">{tech.desc}</p>
             </div>
           ))}
@@ -531,32 +529,32 @@ function TechStackSection() {
 function WhySection() {
   const reasons = [
     {
-      icon: <TrendingUp className="w-7 h-7" />,
+      icon: <DollarSign className="w-7 h-7" />,
       title: 'توفير مالي فلكي',
-      desc: 'أدوات المراقبة والاستجابة تكلف مئات الدولارات شهرياً — هنا بالمجان',
-      color: 'text-emerald-400',
-      bg: 'bg-emerald-500/10',
+      desc: 'أدوات البحث عن العملاء تكلف مئات الدولارات شهرياً — هنا بالمجان',
+      color: 'text-green-400',
+      bg: 'bg-green-500/10',
     },
     {
-      icon: <Zap className="w-7 h-7" />,
-      title: 'استجابة في أجزاء من الثانية',
-      desc: 'يتصرف فور حدوث الخلل — قبل أن يلاحظ العملاء أي انقطاع',
-      color: 'text-yellow-400',
-      bg: 'bg-yellow-500/10',
+      icon: <Target className="w-7 h-7" />,
+      title: 'تخصيص فائق (Hyper-Personalization)',
+      desc: 'رسائل مخصصة تخاطب كل عميل شخصياً — ترفع نسبة الرد بشكل جنوني',
+      color: 'text-orange-400',
+      bg: 'bg-orange-500/10',
     },
     {
-      icon: <Clock className="w-7 h-7" />,
-      title: 'يعمل 24/7 بدون توقف',
-      desc: 'مهندس سحابي كامل لا ينام، لا يتعب، لا يأخذ إجازة',
-      color: 'text-blue-400',
-      bg: 'bg-blue-500/10',
-    },
-    {
-      icon: <Shield className="w-7 h-7" />,
-      title: 'تقليل العنصر البشري',
-      desc: 'لا حاجة لفريق NOC باهظ — النظام يتكفل بكل شيء',
+      icon: <Lock className="w-7 h-7" />,
+      title: 'سيادة وتحكم تام',
+      desc: 'قاعدة بيانات عملائك تبقى تحت سيطرتك المطلقة — لا بيع ولا مشاركة',
       color: 'text-purple-400',
       bg: 'bg-purple-500/10',
+    },
+    {
+      icon: <TrendingUp className="w-7 h-7" />,
+      title: 'نتائج مضمونة',
+      desc: 'معدل استجابة 34%+ مقارنة بـ 1-3% في الرسائل العشوائية التقليدية',
+      color: 'text-blue-400',
+      bg: 'bg-blue-500/10',
     },
   ];
 
@@ -566,7 +564,7 @@ function WhySection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-yellow-500/10 border border-yellow-500/20 rounded-full px-5 py-2 mb-6">
             <Star className="w-4 h-4 text-yellow-400" />
-            <span className="text-yellow-300 text-sm font-medium">لماذا AIOps؟</span>
+            <span className="text-yellow-300 text-sm font-medium">لماذا Lead-Sniper؟</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-black text-white mb-4">
             لماذا <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">تحتاجه؟</span>
@@ -596,10 +594,10 @@ function OtherProjectsSection() {
   const projects = [
     { name: 'Studio-ZeroBaran', desc: 'استوديو الإنتاج المرئي والإعلاني', icon: <Layers className="w-5 h-5" />, gradient: 'from-purple-500 to-pink-500' },
     { name: 'PolyGlot-StreamBaran', desc: 'منظومة الترجمة والدبلجة الصوتية', icon: <Globe className="w-5 h-5" />, gradient: 'from-blue-500 to-cyan-500' },
+    { name: 'AIOps-ZeroBaran', desc: 'المهندس الرقمي لإدارة الخوادم', icon: <Server className="w-5 h-5" />, gradient: 'from-emerald-500 to-blue-500' },
     { name: 'CryptoVault Pro', desc: 'محفظة رقمية متعددة السلاسل', icon: <Hexagon className="w-5 h-5" />, gradient: 'from-cyan-500 to-blue-500' },
     { name: 'AI Copywriter', desc: 'مولّد نصوص تسويقية ذكي', icon: <Brain className="w-5 h-5" />, gradient: 'from-pink-500 to-red-500' },
     { name: 'DesignForge', desc: 'مصمم جرافيك آلي', icon: <Sparkles className="w-5 h-5" />, gradient: 'from-orange-500 to-yellow-500' },
-    { name: 'CodeMentor AI', desc: 'مساعد برمجة ذكي', icon: <Code className="w-5 h-5" />, gradient: 'from-indigo-500 to-purple-500' },
   ];
 
   return (
@@ -641,35 +639,35 @@ function ContactSection() {
     <section id="contact" className="py-24 px-4 relative">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-5 py-2 mb-6">
-            <Mail className="w-4 h-4 text-emerald-400" />
-            <span className="text-emerald-300 text-sm font-medium">تواصل معنا</span>
+          <div className="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-5 py-2 mb-6">
+            <Mail className="w-4 h-4 text-orange-400" />
+            <span className="text-orange-300 text-sm font-medium">تواصل معنا</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-black text-white mb-4">
-            جاهز <span className="bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent">لحماية خوادمك؟</span>
+            جاهز <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">لصيد العملاء؟</span>
           </h2>
-          <p className="text-gray-400 text-lg">تواصل معنا واحصل على مهندسك الرقمي اليوم</p>
+          <p className="text-gray-400 text-lg">تواصل معنا واحصل على صيادك الذكي اليوم</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
-          <a href="mailto:baranavisat@gmail.com" className="group bg-white/[0.03] border border-white/10 rounded-2xl p-6 text-center hover:border-emerald-500/30 transition-all hover:-translate-y-1">
-            <div className="w-14 h-14 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mx-auto mb-4 group-hover:scale-110 transition-transform">
+          <a href="mailto:baranavisat@gmail.com" className="group bg-white/[0.03] border border-white/10 rounded-2xl p-6 text-center hover:border-orange-500/30 transition-all hover:-translate-y-1">
+            <div className="w-14 h-14 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-400 mx-auto mb-4 group-hover:scale-110 transition-transform">
               <Mail className="w-6 h-6" />
             </div>
             <h4 className="font-bold text-white mb-1">البريد الإلكتروني</h4>
             <p className="text-gray-400 text-sm break-all">baranavisat@gmail.com</p>
           </a>
 
-          <a href="tel:+905313263722" className="group bg-white/[0.03] border border-white/10 rounded-2xl p-6 text-center hover:border-blue-500/30 transition-all hover:-translate-y-1">
-            <div className="w-14 h-14 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 mx-auto mb-4 group-hover:scale-110 transition-transform">
+          <a href="tel:+905313263722" className="group bg-white/[0.03] border border-white/10 rounded-2xl p-6 text-center hover:border-red-500/30 transition-all hover:-translate-y-1">
+            <div className="w-14 h-14 rounded-xl bg-red-500/10 flex items-center justify-center text-red-400 mx-auto mb-4 group-hover:scale-110 transition-transform">
               <Phone className="w-6 h-6" />
             </div>
             <h4 className="font-bold text-white mb-1">الهاتف / واتساب</h4>
             <p className="text-gray-400 text-sm" dir="ltr">+90 531 326 3722</p>
           </a>
 
-          <a href="https://baranavi.gumroad.com/" target="_blank" rel="noopener noreferrer" className="group bg-white/[0.03] border border-white/10 rounded-2xl p-6 text-center hover:border-purple-500/30 transition-all hover:-translate-y-1">
-            <div className="w-14 h-14 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 mx-auto mb-4 group-hover:scale-110 transition-transform">
+          <a href="https://baranavi.gumroad.com/" target="_blank" rel="noopener noreferrer" className="group bg-white/[0.03] border border-white/10 rounded-2xl p-6 text-center hover:border-yellow-500/30 transition-all hover:-translate-y-1">
+            <div className="w-14 h-14 rounded-xl bg-yellow-500/10 flex items-center justify-center text-yellow-400 mx-auto mb-4 group-hover:scale-110 transition-transform">
               <ShoppingBag className="w-6 h-6" />
             </div>
             <h4 className="font-bold text-white mb-1">المتجر</h4>
@@ -680,7 +678,7 @@ function ContactSection() {
         {/* Payment */}
         <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-8">
           <h3 className="text-xl font-bold text-white text-center mb-6 flex items-center justify-center gap-2">
-            <Shield className="w-5 h-5 text-emerald-400" />
+            <Shield className="w-5 h-5 text-green-400" />
             طرق الدفع المتاحة
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -714,26 +712,26 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 via-blue-500 to-purple-500 flex items-center justify-center">
-                <Server className="w-5 h-5 text-white" />
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 via-red-500 to-yellow-500 flex items-center justify-center">
+                <Crosshair className="w-5 h-5 text-white" />
               </div>
               <div>
-                <span className="font-black text-white text-sm sm:text-base block leading-none">AIOps</span>
-                <span className="text-[10px] text-emerald-400 font-medium tracking-widest">ZEROBARAN</span>
+                <span className="font-black text-white text-sm sm:text-base block leading-none">Lead-Sniper</span>
+                <span className="text-[10px] text-orange-400 font-medium tracking-widest">ZEROBARAN</span>
               </div>
             </div>
             <p className="text-gray-500 text-sm max-w-md leading-relaxed">
-              المهندس الرقمي الذاتي لإدارة واستعادة الخوادم — نظام ذكي مستقل يراقب ويصلح خوادمك 24/7 بالمجان.
+              المنظومة الذاتية لصيد العملاء والتسويق البارد اللامركزي — نظام ذكي مستقل يبحث عن عملائك ويكتب رسائل مخصصة بالمجان.
             </p>
           </div>
 
           <div>
             <h4 className="font-bold text-white mb-4 text-sm">روابط</h4>
             <ul className="space-y-2">
-              <li><a href="#features" className="text-gray-500 hover:text-emerald-400 text-sm transition-colors">المميزات</a></li>
-              <li><a href="#how-it-works" className="text-gray-500 hover:text-emerald-400 text-sm transition-colors">آلية العمل</a></li>
-              <li><a href="#demo" className="text-gray-500 hover:text-emerald-400 text-sm transition-colors">تجربة حية</a></li>
-              <li><a href="#tech" className="text-gray-500 hover:text-emerald-400 text-sm transition-colors">التقنيات</a></li>
+              <li><a href="#features" className="text-gray-500 hover:text-orange-400 text-sm transition-colors">المميزات</a></li>
+              <li><a href="#how-it-works" className="text-gray-500 hover:text-orange-400 text-sm transition-colors">آلية العمل</a></li>
+              <li><a href="#demo" className="text-gray-500 hover:text-orange-400 text-sm transition-colors">تجربة حية</a></li>
+              <li><a href="#tech" className="text-gray-500 hover:text-orange-400 text-sm transition-colors">التقنيات</a></li>
             </ul>
           </div>
 
@@ -755,7 +753,7 @@ function Footer() {
 
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-600 text-sm">
-            © 2025 AIOps-ZeroBaran — Baran Avisat. جميع الحقوق محفوظة.
+            © 2025 Lead-Sniper ZeroBaran — Baran Avisat. جميع الحقوق محفوظة.
           </p>
           <div className="flex items-center gap-2 text-gray-600 text-xs">
             <span>صُنع بـ</span>
@@ -771,7 +769,7 @@ function Footer() {
 // ============ MAIN APP ============
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#020617] text-white" dir="rtl" style={{ fontFamily: "'Tajawal', sans-serif" }}>
+    <div className="min-h-screen bg-[#0a0a0f] text-white" dir="rtl" style={{ fontFamily: "'Tajawal', sans-serif" }}>
       <AnimatedBackground />
       <Navbar />
       <HeroSection />

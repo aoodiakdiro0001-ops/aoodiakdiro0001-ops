@@ -1,14 +1,14 @@
-# 🤖 AIOps-ZeroBaran
+# 🎯 Lead-Sniper ZeroBaran
 
 <div align="center">
 
-### 🔧 المهندس الرقمي الذاتي لإدارة واستعادة الخوادم
+### 🏹 المنظومة الذاتية لصيد العملاء والتسويق البارد اللامركزي
 
-**نظام ذكي متكامل ومستقل لمراقبة صحة الخوادم، اكتشاف الأعطال، وإصلاحها ذاتياً (Self-Healing Operations)**
+**نظام ذكي متكامل لاكتشاف العملاء المحتملين، جمع بياناتهم، صياغة رسائل تواصل مخصصة للغاية، وإدارة خط المبيعات**
 
-![Uptime](https://img.shields.io/badge/Uptime-99.99%25-emerald?style=for-the-badge)
-![Response](https://img.shields.io/badge/Response-<4s-blue?style=for-the-badge)
-![Cost](https://img.shields.io/badge/Cost-FREE-green?style=for-the-badge)
+![Leads](https://img.shields.io/badge/Leads-1247+-orange?style=for-the-badge)
+![Conversion](https://img.shields.io/badge/Conversion-34.7%25-green?style=for-the-badge)
+![Cost](https://img.shields.io/badge/Cost-FREE-blue?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 
 [🌐 الموقع](#) | [📦 المتجر](https://baranavi.gumroad.com/) | [📧 تواصل](mailto:baranavisat@gmail.com)
@@ -17,17 +17,17 @@
 
 ---
 
-## 📖 ما هو AIOps-ZeroBaran؟
+## 📖 ما هو Lead-Sniper ZeroBaran؟
 
 نظام ذكي مستقل يقوم بـ:
 
-- ✅ **مراقبة خوادمك 24/7** — فحص دوري كل بضع دقائق
-- ✅ **اكتشاف الأعطال فوراً** — عند ظهور أي خطأ أو انقطاع
-- ✅ **تشخيص السبب الجذري بالـ AI** — تحليل سجلات الأخطاء بـ Groq/Gemini
-- ✅ **إصلاح ذاتي (Self-Healing)** — تنفيذ أوامر الإصلاح تلقائياً
-- ✅ **تنبيهات فورية** — تقارير تفصيلية على تليجرام
+- ✅ **البحث عن العملاء المحتملين** — تنقيب آلي عبر منصات العمل الحر ومواقع الشركات
+- ✅ **تحليل نشاطهم ومشاريعهم** — فهم احتياجاتهم وتحدياتهم
+- ✅ **صياغة رسائل مخصصة** — Cold Outreach شديدة الاحترافية تخاطب كل عميل شخصياً
+- ✅ **إدارة خط المبيعات** — تتبع حالة كل عميل (جديد، تمت مراسلته، أبدى اهتماماً، عميل حالي)
+- ✅ **إرسال ذكي** — في الأوقات المثلى لزيادة فرص القراءة والرد
 
-**كل هذا — بدون دفع دولار واحد لأي منصة مراقبة مدفوعة!**
+**كل هذا — بدون دفع دولار واحد لأي منصة مدفوعة!**
 
 ---
 
@@ -35,43 +35,43 @@
 
 | المكون | التقنية | الدور |
 |--------|---------|-------|
-| 🔍 الرصد | GitHub Actions | فحص دوري للخوادم والـ APIs |
-| 🌐 البوابة | Cloudflare Workers | استقبال الإشارات والسجلات |
-| 🧠 التشخيص | Groq / Gemini API | تحليل السجلات واكتشاف السبب |
-| 💾 التخزين | Turso / Supabase | سجلات الحوادث والإجراءات |
-| 🔔 التنبيهات | Telegram Bot | تقارير فورية + أوامر يدوية |
-| 🔧 التنفيذ | Python + SSH | تنفيذ أوامر الإصلاح |
+| 🔍 البحث | Python + BeautifulSoup | زيارة منصات العمل الحر ومواقع الشركات |
+| ⚙️ الجدولة | GitHub Actions | تنفيذ عمليات البحث في أوقات مجدولة |
+| 🧠 التخصيص | Google Gemini API | تحليل بيانات العميل وصياغة رسالة مخصصة |
+| 💾 التخزين | Supabase | قاعدة بيانات العملاء وسجلات الحملات |
+| 📨 التنبيهات | Telegram Bot API | إرسال إشعار فوري بالعميل الجديد |
+| 🖥️ الواجهة | Vercel Dashboard | لوحة تحكم لإدارة العملاء والصفقات |
 
 ---
 
 ## 🏗️ البنية المعمارية
 
 ```
-[الخوادم / المواقع / APIs]
+[تحديد معايير العميل]
          ↓
-[GitHub Actions / Cloudflare (فحص دوري)]
+[GitHub Actions + Python Scraper (البحث الآلي)]
          ↓
-[عند عطل ──► جلب Error Logs]
+[Google Gemini API (تحليل + صياغة رسالة مخصصة)]
          ↓
-[Groq/Gemini (تحليل + توليد أوامر إصلاح)]
+[Supabase (تخزين العميل + حالة التواصل)]
          ↓
-[تنفيذ الإصلاح آلياً ──► تقرير لتليجرام + Supabase]
+[Telegram (إرسال مسودة الرسالة للموافقة)]
 ```
 
 ### الطبقات الأربع:
-1. **طبقة الرصد** — GitHub Actions + Cloudflare Workers
-2. **طبقة التشخيص** — Python + Groq/Gemini API
-3. **طبقة الإصلاح** — SSH + Webhooks
-4. **طبقة التوثيق** — Telegram + Supabase
+1. **طبقة التنقيب** — Python + BeautifulSoup + GitHub Actions
+2. **العقل الذكي** — Google Gemini API
+3. **طبقة الإدارة** — Supabase
+4. **طبقة التسليم** — Telegram Bot + Vercel
 
 ---
 
 ## 🎯 لماذا تحتاجه؟
 
-- 💰 **توفير مالي فلكي** — أدوات المراقبة تكلف مئات الدولارات شهرياً
-- ⚡ **استجابة في أجزاء من الثانية** — قبل أن يلاحظ العملاء أي انقطاع
-- 🕐 **يعمل 24/7** — مهندس سحابي لا ينام ولا يتعب
-- 🤖 **تقليل العنصر البشري** — لا حاجة لفريق NOC باهظ
+- 💰 **توفير مالي فلكي** — أدوات البحث عن العملاء تكلف مئات الدولارات شهرياً
+- 🎯 **تخصيص فائق (Hyper-Personalization)** — رسائل مخصصة ترفع نسبة الرد بشكل جنوني
+- 🔒 **سيادة وتحكم تام** — قاعدة بيانات عملائك تبقى تحت سيطرتك المطلقة
+- 📈 **نتائج مضمونة** — معدل استجابة 34%+ مقارنة بـ 1-3% في الرسائل العشوائية
 
 ---
 
@@ -79,8 +79,8 @@
 
 ```bash
 # Clone
-git clone https://github.com/YOUR_USERNAME/aiops-zerobaran.git
-cd aiops-zerobaran
+git clone https://github.com/YOUR_USERNAME/lead-sniper-zerobaran.git
+cd lead-sniper-zerobaran
 
 # Install
 npm install
@@ -116,10 +116,10 @@ npm run build
 
 - **Studio-ZeroBaran** — استوديو الإنتاج المرئي والإعلاني
 - **PolyGlot-StreamBaran** — منظومة الترجمة والدبلجة الصوتية
+- **AIOps-ZeroBaran** — المهندس الرقمي لإدارة الخوادم
 - **CryptoVault Pro** — محفظة رقمية متعددة السلاسل
 - **AI Copywriter** — مولّد نصوص تسويقية ذكي
 - **DesignForge** — مصمم جرافيك آلي
-- **SocialPilot** — مدير سوشيال ميديا آلي
 
 ---
 
@@ -127,6 +127,6 @@ npm run build
 
 **صُنع بـ ❤️ وذكاء اصطناعي مجاني**
 
-© 2025 AIOps-ZeroBaran — Baran Avisat. جميع الحقوق محفوظة.
+© 2025 Lead-Sniper ZeroBaran — Baran Avisat. جميع الحقوق محفوظة.
 
 </div>
