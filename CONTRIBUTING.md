@@ -1,6 +1,6 @@
-# 🤝 دليل المساهمة - SEO-GhostBaran
+# 🤝 دليل المساهمة - Pixel-ZeroBaran
 
-شكراً لاهتمامك بالمساهمة في مشروع SEO-GhostBaran! 🎉
+شكراً لاهتمامك بالمساهمة في مشروع Pixel-ZeroBaran! 🎉
 
 ---
 
@@ -10,7 +10,7 @@
 
 إذا وجدت خطأً في المشروع:
 
-1. اذهب إلى [Issues](https://github.com/YOUR_USERNAME/seo-ghostbaran/issues)
+1. اذهب إلى [Issues](https://github.com/YOUR_USERNAME/pixel-zerobaran/issues)
 2. اضغط "New Issue"
 3. اختر "Bug Report"
 4. املأ التفاصيل بأكبر قدر ممكن
@@ -20,7 +20,7 @@
 
 إذا كان لديك فكرة لتحسين المشروع:
 
-1. اذهب إلى [Issues](https://github.com/YOUR_USERNAME/seo-ghostbaran/issues)
+1. اذهب إلى [Issues](https://github.com/YOUR_USERNAME/pixel-zerobaran/issues)
 2. اضغط "New Issue"
 3. اختر "Feature Request"
 4. اشرح الفكرة بوضوح
@@ -37,8 +37,8 @@
 
 2. **استنسخ المشروع**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/seo-ghostbaran.git
-   cd seo-ghostbaran
+   git clone https://github.com/YOUR_USERNAME/pixel-zerobaran.git
+   cd pixel-zerobaran
    ```
 
 3. **أنشئ فرع جديد**
@@ -182,7 +182,7 @@ npm run dev
 
 جميع المساهمين سيتم ذكرهم في ملف CONTRIBUTORS.md
 
-شكراً لمساعدتك في تحسين SEO-GhostBaran! 🚀
+شكراً لمساعدتك في تحسين Pixel-ZeroBaran! 🚀
 
 ---
 
@@ -190,6 +190,6 @@ npm run dev
 
 **صُنع بـ ❤️ بواسطة المجتمع**
 
-© 2025 SEO-GhostBaran — Baran Avisat
+© 2025 Pixel-ZeroBaran — Baran Avisat
 
 </div>

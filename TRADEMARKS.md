@@ -1,15 +1,15 @@
-# ™️ العلامات التجارية - SEO-GhostBaran
+# ™️ العلامات التجارية - Pixel-ZeroBaran
 
 ---
 
 ## 🎨 علاماتنا التجارية
 
-### SEO-GhostBaran™
+### Pixel-ZeroBaran™
 
 - **النوع:** علامة تجارية
 - **المالك:** Baran Avisat
 - **التسجيل:** قيد التسجيل
-- **الاستخدام:** منظومة الرصد والتجسس التسويقي
+- **الاستخدام:** استوديو تعديل ومعالجة الصور
 
 ### Studio-ZeroBaran™
 
@@ -30,7 +30,8 @@
 - **TypeScript™** - علامة تجارية لـ Microsoft Corporation
 - **Tailwind CSS™** - علامة تجارية لـ Tailwind Labs, Inc.
 - **Vite™** - علامة تجارية لـ Evan You
-- **BeautifulSoup™** - علامة تجارية لمطوري BeautifulSoup
+- **rembg™** - علامة تجارية لمطوري rembg
+- **OpenCV™** - علامة تجارية لـ OpenCV.org
 
 ### المنصات
 
@@ -42,12 +43,7 @@
 ### الذكاء الاصطناعي
 
 - **Google Gemini™** - علامة تجارية لـ Google LLC
-- **Groq™** - علامة تجارية لـ Groq, Inc.
-
-### محركات البحث
-
-- **Google Search™** - علامة تجارية لـ Google LLC
-- **Bing™** - علامة تجارية لـ Microsoft Corporation
+- **Hugging Face™** - علامة تجارية لـ Hugging Face, Inc.
 
 ---
 
@@ -72,6 +68,6 @@
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 SEO-GhostBaran. جميع الحقوق محفوظة.
+© 2025 Pixel-ZeroBaran. جميع الحقوق محفوظة.
 
 </div>

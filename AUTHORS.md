@@ -1,4 +1,4 @@
-# 👥 المؤلفون والمساهمون - SEO-GhostBaran
+# 👥 المؤلفون والمساهمون - Pixel-ZeroBaran
 
 ---
 
@@ -91,6 +91,6 @@
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 SEO-GhostBaran. جميع الحقوق محفوظة.
+© 2025 Pixel-ZeroBaran. جميع الحقوق محفوظة.
 
 </div>

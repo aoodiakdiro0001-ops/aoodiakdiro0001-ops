@@ -1,4 +1,4 @@
-# 🙏 الشكر والتقدير - SEO-GhostBaran
+# 🙏 الشكر والتقدير - Pixel-ZeroBaran
 
 ---
 
@@ -20,15 +20,16 @@
 
 - [Lucide React](https://lucide.dev/) - مكتبة أيقونات جميلة ومفتوحة المصدر
 
-### تقنيات SEO
+### تقنيات معالجة الصور
 
-- [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) - مكتبة Python لاستخراج البيانات
-- [SerpApi](https://serpapi.com/) - API لنتائج محركات البحث
+- [rembg](https://github.com/danielgatis/rembg) - مكتبة Python لإزالة الخلفيات
+- [OpenCV](https://opencv.org/) - مكتبة معالجة الصور
+- [Pillow](https://pillow.readthedocs.io/) - مكتبة Python للصور
 
 ### الذكاء الاصطناعي
 
 - [Google Gemini](https://ai.google.dev/) - نموذج ذكاء اصطناعي من Google
-- [Groq](https://groq.com/) - منصة استضافة نماذج AI
+- [Hugging Face](https://huggingface.co/) - منصة نماذج الذكاء الاصطناعي
 
 ### المنصات والخدمات
 
@@ -43,9 +44,9 @@
 
 نشكر جميع المشاريع والمبادرات التي ألهمتنا:
 
-- مشاريع SEO مفتوحة المصدر
+- مشاريع معالجة الصور مفتوحة المصدر
 - مجتمع المطورين العرب
-- خبراء التسويق الرقمي
+- المصورين والمصممين
 - مطوري أدوات الذكاء الاصطناعي
 
 ---
@@ -67,8 +68,8 @@
 
 - مطوري React و TypeScript
 - مطوري Tailwind CSS
-- مطوري BeautifulSoup
-- الباحثين في مجال SEO والذكاء الاصطناعي
+- مطوري rembg و OpenCV
+- الباحثين في مجال معالجة الصور والذكاء الاصطناعي
 
 ---
 
@@ -96,7 +97,7 @@
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 SEO-GhostBaran. جميع الحقوق محفوظة.
+© 2025 Pixel-ZeroBaran. جميع الحقوق محفوظة.
 
 **شكراً لجميع من ساهم في نجاح هذا المشروع! 🙏**
 

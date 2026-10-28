@@ -1,4 +1,4 @@
-# 🤝 مدونة السلوك - SEO-GhostBaran
+# 🤝 مدونة السلوك - Pixel-ZeroBaran
 
 ## تعهدنا
 
@@ -56,6 +56,6 @@
 
 **صُنع بـ ❤️ بواسطة Baran Avisat**
 
-© 2025 SEO-GhostBaran. جميع الحقوق محفوظة.
+© 2025 Pixel-ZeroBaran. جميع الحقوق محفوظة.
 
 </div>

@@ -1,6 +1,6 @@
-# 🌐 دليل الترجمة - SEO-GhostBaran
+# 🌐 دليل الترجمة - Pixel-ZeroBaran
 
-شكراً لاهتمامك بترجمة SEO-GhostBaran! 🎉
+شكراً لاهتمامك بترجمة Pixel-ZeroBaran! 🎉
 
 ---
 
@@ -32,9 +32,9 @@ cp src/locales/ar.json src/locales/en.json
 ```json
 {
   "hero": {
-    "title": "تصدّر نتائج البحث",
-    "subtitle": "بدون منافسين",
-    "description": "منظومة ذكية..."
+    "title": "صورك الاحترافية",
+    "subtitle": "بضغطة زر واحدة",
+    "description": "نظام ذكي..."
   }
 }
 ```
@@ -69,12 +69,11 @@ npm run dev
 
 | الإنجليزية | العربية |
 |-----------|---------|
-| SEO | تحسين محركات البحث |
-| Keyword | كلمة مفتاحية |
-| Ranking | ترتيب |
-| Content | محتوى |
-| Backlinks | روابط خلفية |
-| Meta Tags | وسوم تعريفية |
+| Background Removal | إزالة الخلفية |
+| Relighting | إعادة الإضاءة |
+| Product Photography | تصوير المنتجات |
+| Virtual Photography | التصوير الافتراضي |
+| Bulk Processing | المعالجة بالجملة |
 
 ---
 
@@ -148,7 +147,7 @@ npm run dev
 
 سيتم ذكر جميع المترجمين في ملف CONTRIBUTORS.md
 
-شكراً لمساعدتك في جعل SEO-GhostBaran متاحاً للجميع! 🌍
+شكراً لمساعدتك في جعل Pixel-ZeroBaran متاحاً للجميع! 🌍
 
 ---
 
@@ -156,6 +155,6 @@ npm run dev
 
 **صُنع بـ ❤️ بواسطة المجتمع**
 
-© 2025 SEO-GhostBaran — Baran Avisat
+© 2025 Pixel-ZeroBaran — Baran Avisat
 
 </div>
