@@ -1,15 +1,15 @@
-# 🚀 Studio-ZeroBaran
+# 🌍 PolyGlot-StreamBaran
 
 <div align="center">
 
-### 🎨 استوديو الإنتاج المرئي والإعلاني الذاتي واللامركزي
+### 🎙️ منظومة الترجمة الذاتية والدبلجة الصوتية اللامركزية
 
-**نصمم مشاريع عظيمة لا مثيل لها — باستخدام 8+ نماذج ذكاء اصطناعي مجانية**
+**نظام ذكي متكامل لترجمة، تفريغ، ودبلجة مقاطع الفيديو والصوتيات إلى أي لغة في العالم**
 
-![Projects](https://img.shields.io/badge/Projects-12+-purple?style=for-the-badge)
-![AI Models](https://img.shields.io/badge/AI_Models-8+-cyan?style=for-the-badge)
+![Languages](https://img.shields.io/badge/Languages-50+-blue?style=for-the-badge)
+![Accuracy](https://img.shields.io/badge/Accuracy-99%25-cyan?style=for-the-badge)
+![Cost](https://img.shields.io/badge/Cost-FREE-green?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
-![Cost](https://img.shields.io/badge/Cost-FREE-orange?style=for-the-badge)
 
 [🌐 الموقع](#) | [📦 المتجر](https://baranavi.gumroad.com/) | [📧 تواصل](mailto:baranavisat@gmail.com)
 
@@ -17,65 +17,85 @@
 
 ---
 
-## 🎯 ما هو Studio-ZeroBaran؟
+## 📖 ما هو PolyGlot-StreamBaran؟
 
-استوديو ذكي يجمع بين **12 مشروعاً احترافياً** و **8+ نماذج ذكاء اصطناعي مجانية** لإنتاج:
+نظام ذكي متكامل يأخذ رابط فيديو أو ملف صوتي، ويقوم آلياً بـ:
 
-- ✅ صور تسويقية احترافية (Product Mockups)
-- ✅ شعارات وهويات بصرية
-- ✅ منشورات وسائل التواصل الاجتماعي
-- ✅ نصوص إعلانية ذكية
-- ✅ فيديوهات ترويجية قصيرة
-- ✅ مؤثرات صوتية وموسيقى
-- ✅ نشر آلي مجدول
+- ✅ **تفريغ الصوت** بدقة مذهلة (Whisper)
+- ✅ **ترجمة احترافية** بسياق قانوني/تسويقي (Gemini API)
+- ✅ **توليد تعليق صوتي** بشري طبيعي (Edge-TTS)
+- ✅ **دمج الترجمة** على الفيديو (FFmpeg)
+- ✅ **إخراج فيديو نهائي** جاهز للنشر
 
-**كل هذا — بدون دفع أي اشتراك!**
+**كل هذا — بدون دفع دولار واحد لأي منصة مدفوعة!**
 
 ---
 
-## 🤖 أسطول الذكاء الاصطناعي
+## 🛠️ التقنيات المستخدمة (Free Tech Stack)
 
-| النموذج | الدور |
-|---------|-------|
-| 🧠 Google Gemini | نصوص + رؤية حاسوبية |
-| ⚡ Groq (Llama) | نصوص فائقة السرعة |
-| 🖼️ Hugging Face | توليد صور (Flux/SD) |
-| 🎨 Stable Diffusion | صور احترافية 4K |
-| 🌸 FLUX.1 | صور واقعية |
-| 🎤 Whisper | تحويل صوت لنص |
-| 🔊 Bark | تحويل نص لصوت |
-| 🔍 Real-ESRGAN | تحسين جودة الصور 4x |
-
----
-
-## 📦 المشاريع الـ 12
-
-| # | المشروع | الحالة |
-|---|---------|--------|
-| 1 | Studio-ZeroBaran — إنتاج مرئي | 🟢 LIVE |
-| 2 | CryptoVault Pro — محفظة رقمية | 🟢 LIVE |
-| 3 | AI Copywriter — نصوص تسويقية | 🟢 LIVE |
-| 4 | DesignForge — تصميم جرافيك | 🟡 BETA |
-| 5 | SocialPilot — سوشيال ميديا | 🟡 BETA |
-| 6 | VideoGen Studio — فيديوهات | 🔜 SOON |
-| 7 | CodeMentor AI — مساعد برمجة | 🟢 LIVE |
-| 8 | DataPulse — تحليلات لحظية | 🟢 LIVE |
-| 9 | EcomBoost — أتمتة تجارة | 🟡 BETA |
-| 10 | SecureVault — إدارة كلمات مرور | 🟢 LIVE |
-| 11 | MusicLab AI — موسيقى | 🔜 SOON |
-| 12 | DocuFlow — معالجة مستندات | 🟢 LIVE |
+| المكون | التقنية | الدور |
+|--------|---------|-------|
+| 🔄 الأتمتة | GitHub Actions | خادم مجاني للمعالجة |
+| 🎤 التفريغ | Whisper (OpenAI) | تحويل صوت لنص بدقة |
+| 🧠 الترجمة | Google Gemini API | ترجمة سياقية احترافية |
+| 🔊 الدبلجة | Edge-TTS | أصوات Microsoft العصبية |
+| 🎬 الدمج | FFmpeg | تركيب الصوت والترجمة |
+| 💾 التخزين | Supabase | إدارة الملفات |
+| 📱 التسليم | Telegram Bot | واجهة التحكم |
+| 🌐 الواجهة | React + Vite | واجهة المستخدم |
 
 ---
 
-## 🛠️ التقنيات المجانية
+## 🏗️ البنية المعمارية
 
 ```
-GitHub Actions → Google Gemini → Hugging Face → Pillow → Supabase → Telegram
+[إرسال رابط/ملف] → [FFmpeg: استخراج الصوت]
+         ↓
+[Whisper: تفريغ النص + توقيت] → [Gemini: ترجمة سياقية]
+         ↓
+[Edge-TTS: توليد صوت بشري] → [FFmpeg: دمج + تصدير]
+         ↓
+[Supabase: تخزين] → [Telegram: تسليم الفيديو النهائي]
+```
+
+### الطبقات الأربع:
+1. **طبقة الالتقاط** — FFmpeg لاستخراج الصوت من الفيديو
+2. **طبقة التفريغ والترجمة** — Whisper + Gemini API
+3. **طبقة التعليق الصوتي** — Edge-TTS (أصوات Microsoft)
+4. **طبقة الدمج والتسليم** — FFmpeg + Supabase + Telegram
+
+---
+
+## 🌐 اللغات المدعومة
+
+50+ لغة تشمل:
+- 🇬🇧 English | 🇹🇷 Türkçe | 🇸🇦 العربية | 🇫🇷 Français
+- 🇩🇪 Deutsch | 🇪🇸 Español | 🇨🇳 中文 | 🇯🇵 日本語
+- 🇰🇷 한국어 | 🇮🇳 हिन्दी | 🇷🇺 Русский | 🇧🇷 Português
+- والمزيد...
+
+---
+
+## 🚀 التشغيل المحلي
+
+```bash
+# Clone
+git clone https://github.com/YOUR_USERNAME/polyglot-streambaran.git
+cd polyglot-streambaran
+
+# Install
+npm install
+
+# Dev
+npm run dev
+
+# Build
+npm run build
 ```
 
 ---
 
-## 📞 التواصل
+## 📞 التواصل والدعم
 
 - 📧 **Email:** baranavisat@gmail.com
 - 📱 **Phone/WhatsApp:** +90 531 326 3722
@@ -87,9 +107,20 @@ GitHub Actions → Google Gemini → Hugging Face → Pillow → Supabase → Te
 
 | الطريقة | التفاصيل |
 |---------|----------|
-| 🏦 تحويل بنكي | ليرة تركية / دولار |
-| ₿ بيتكوين | دفع آمن |
-| 💎 USDT | عملات رقمية |
+| 🏦 تحويل بنكي | ليرة تركية / دولار أمريكي |
+| ₿ بيتكوين | دفع آمن ومباشر |
+| 💎 USDT | عملات رقمية متنوعة |
+
+---
+
+## 📦 مشاريع أخرى من Studio-ZeroBaran
+
+- **Studio-ZeroBaran** — استوديو الإنتاج المرئي والإعلاني
+- **CryptoVault Pro** — محفظة رقمية متعددة السلاسل
+- **AI Copywriter** — مولّد نصوص تسويقية ذكي
+- **DesignForge** — مصمم جرافيك آلي
+- **SocialPilot** — مدير سوشيال ميديا آلي
+- **CodeMentor AI** — مساعد برمجة ذكي
 
 ---
 
@@ -97,6 +128,6 @@ GitHub Actions → Google Gemini → Hugging Face → Pillow → Supabase → Te
 
 **صُنع بـ ❤️ وذكاء اصطناعي مجاني**
 
-© 2025 Studio-ZeroBaran — Baran Avisat
+© 2025 PolyGlot-StreamBaran — Baran Avisat. جميع الحقوق محفوظة.
 
 </div>
