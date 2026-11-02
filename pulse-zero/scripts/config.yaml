@@ -1,0 +1,57 @@
+# ============================================================
+#  Pulse-Zero — ملف الإعدادات المركزي (كل شيء هنا، بلا كود صلب)
+#  القيم التي تبدأ بـ ${} تُقرأ من متغيرات البيئة (GitHub Secrets)
+# ============================================================
+
+brand:
+  name: "BaranAvi"                     # اسم علامتك التجارية
+  keywords: ["baranavi", "baran avi", "باران"]   # كلمات البحث عن الإشارات
+  languages: ["ar", "en"]              # لغات التحليل
+
+sources:
+  # 1) RSS/Atom feeds — أي متجر أو مدونة أو Reddit thread يوفّر Feed
+  rss:
+    - name: "Store Reviews Feed"
+      url: "https://gumroad.com/products/reviews.rss?query=baranavi"
+    - name: "Reddit Mentions"
+      url: "https://www.reddit.com/search.rss?q=baranavi&sort=new"
+
+  # 2) Google News — رصد المقالات والمنشورات الصحفية المجانية الذكر
+  google_news:
+    enabled: true
+    query: "baranavi OR baran-avi"
+    limit: 30
+
+  # 3) HTML Scraping — صفحات تقييمات عامة (احترم robots.txt وقوانين المنصة)
+  html:
+    enabled: false          # فعّلها فقط لمصادر تسمح بالمسح العام
+    selectors:
+      item: "div.review"
+      title: "h3.review-title"
+      body:  "p.review-body"
+      rating: "[data-rating]"
+
+  # 4) Demo mode — بيانات تجريبية لاختبار الأنبوب كاملاً دون إنترنت
+  demo: true
+
+ai:
+  provider: "groq"          # groq | gemini | mock
+  model:
+    groq: "llama-3.3-70b-versatile"
+    gemini: "gemini-2.0-flash"
+  max_items_per_call: 12    # عدد التعليقات في استدعاء الـ API الواحد (توفير للحصص)
+  temperature: 0.2
+
+alerts:
+  telegram:
+    enabled: true
+    negative_threshold: -0.45   # أقل من هذا ⇒ تنبيه عاجل
+    critical_keywords: ["تالف", "احتيال", "scam", "broken", "لم يصل", "never arrived", "refund", "استرجاع"]
+  weekly_report: true           # تقرير سمعة أسبوعي كل أحد
+
+storage:
+  backend: "supabase"           # supabase | json (json = وضع محلي بلا حساب)
+  table: "mentions"
+  json_fallback_path: "state/mentions.json"
+
+schedule_note: "يعمل عبر GitHub Actions كل 3 ساعات — راجع .github/workflows/pulse-zero.yml"

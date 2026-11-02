@@ -43,3 +43,8 @@ coverage/
 node_modules/
 .next/
 dist/
+
+# Pulse-Zero local state & python caches
+pulse-zero/scripts/state/
+__pycache__/
+*.pyc

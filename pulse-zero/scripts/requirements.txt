@@ -1,0 +1,12 @@
+# الطبقة الأساسية — تعمل بمكتبات قياسية في بايثون حتى بلا إنترنت/حزم:
+#   ingest.py / sentiment.py / storage.py / alerts.py / pulse_zero.py
+
+PyYAML>=6.0          # قراءة config.yaml
+feedparser>=6.0.11   # طبقة RSS (يوجد fallback قياسي إن غابت)
+beautifulsoup4>=4.12 # طبقة HTML scraping
+lxml>=5.0            # parser أسرع مع bs4
+
+# لوحة التحكم Streamlit (اختيارية — شغّلها عند الحاجة فقط):
+streamlit>=1.35
+pandas>=2.0
+supabase>=2.5        # لقراءة اللوحة من Supabase (الـ Cron نفسه يستخدم REST بلا SDK)
