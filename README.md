@@ -4,7 +4,7 @@
 ### واجهة التحصيل المالي الرسمية · منتجات برمجية جاهزة بموارد مجانية 100%
 
 [![Store](https://img.shields.io/badge/🛒-Gumroad%20Store-ff90e8?style=for-the-badge)](https://baranavi.gumroad.com/)
-[![Products](https://img.shields.io/badge/📦-66%20product%20live-brightgreen?style=for-the-badge)](https://baranavi.gumroad.com/)
+[![Products](https://img.shields.io/badge/📦-67%20product%20live-brightgreen?style=for-the-badge)](https://baranavi.gumroad.com/)
 [![License](https://img.shields.io/badge/License-MIT%20·%20©%202026-blue?style=for-the-badge)](LICENSE)
 [![WhatsApp](https://img.shields.io/badge/📱-WhatsApp%20%2B90%20531%20326%2037%2022-25D366?style=for-the-badge)](https://wa.me/905313263722)
 
@@ -31,7 +31,7 @@
 | [**Match-ZeroBaran**](https://baranavi.gumroad.com/l/match-zerobaran) | محرك توصيات ذكي وبيع متقاطع | **$39** لمرة واحدة |
 | [**Secret-ZeroBaran**](https://baranavi.gumroad.com/l/secret-zerobaran) | خزنة أسرار بـ Zero-Knowledge | **$19** لمرة واحدة |
 | [**Code-Shield**](https://baranavi.gumroad.com/l/code-shield) | حماية مساحات العمل والكود | **$19** لمرة واحدة |
-| [**كل المنتجات**](https://baranavi.gumroad.com/) | 66 منتجاً · أداة أمنية · إنتاجية · تحليل · ذكاء اصطناعي | من **$5** |
+| [**كل المنتجات**](https://baranavi.gumroad.com/) | 67 منتجاً · أداة أمنية · إنتاجية · تحليل · ذكاء اصطناعي | من **$5** |
 
 ### 🔥 لماذا أسعارنا أقل من السوق؟
 | المنافس (اشتراك شهري) | السعر | منتجنا (لمرة واحدة) |
