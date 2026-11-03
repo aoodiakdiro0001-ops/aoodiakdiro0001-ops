@@ -1,0 +1,100 @@
+name: Design-Guard-ZeroBaran — QA Sentinel (Project #39)
+
+# ============================================================
+#  خادم مجاني يفحص جودة مخرجات الذكاء الاصطناعي دورياً:
+#   • كل 3 ساعات: امسح inbox/ وافحص كل أصل جديد
+#   • مع كل push لأصول جديدة في inbox/ (فحص فوري عند التوليد)
+#   • الأحد 08:00: ملخص إنتاجية الجودة الأسبوعي → تليجرام
+#   • workflow_dispatch: زر تشغيل يدوي + وضع demo للتحربة
+#  بدون أي أسرار يعمل النظام بوضع MockBrain + JSON محلي.
+# ============================================================
+
+on:
+  schedule:
+    - cron: "0 */3 * * *"          # دورة فحص كل 3 ساعات
+    - cron: "0 8 * * 0"            # الملخص الأسبوعي — الأحد 08:00 UTC
+  push:
+    paths:
+      - "design-guard-zerobaran/inbox/**"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "scan = افحص inbox | demo = عيّنات اختبار | weekly = ملخص أسبوعي"
+        default: "scan"
+        type: choice
+        options: [scan, demo, weekly]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: design-guard
+  cancel-in-progress: false
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: design-guard-zerobaran
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install inspection stack (OpenCV/Pillow/Tesseract-ready)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends tesseract-ocr tesseract-ocr-eng tesseract-ocr-ara || true
+          pip install -r scripts/requirements.txt
+
+      - name: 🛡️ Run Quality Guard pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          MODE="${{ github.event.inputs.mode || 'scan' }}"
+          if [[ "${{ github.event.schedule }}" == "0 8 * * 0" ]]; then MODE="weekly"; fi
+          echo "🎯 وضع التشغيل: $MODE"
+          if [[ "$MODE" == "demo" ]]; then
+            python scripts/design_guard.py --demo
+          elif [[ "$MODE" == "weekly" ]]; then
+            python scripts/design_guard.py --weekly
+          else
+            mkdir -p inbox
+            python scripts/design_guard.py --scan
+          fi
+
+      - name: ♻️ Persist local JSON state between runs (when Supabase is off)
+        if: always()
+        uses: actions/cache@v4
+        with:
+          path: design-guard-zerobaran/state
+          key: dgz-state-${{ github.run_number }}
+          restore-keys: dgz-state-
+
+      - name: 📤 Commit archived decisions back to repo
+        if: github.event_name != 'schedule' || github.event.schedule == '0 */3 * * *'
+        run: |
+          git config user.name  "design-guard-bot"
+          git config user.email "design-guard-bot@users.noreply.github.com"
+          git add -A design-guard-zerobaran/archive || true
+          if ! git diff --cached --quiet; then
+            git commit -m "🛡️ Design-Guard: أرشفة قرارات الفحص ($(date -u +%FT%TZ))"
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            git push origin HEAD:"${GITHUB_REF_NAME}" || true
+          fi
+
+      - name: ✅ Self-test contract (no secrets needed)
+        run: |
+          python scripts/design_guard.py --demo --no-archive > /dev/null 2>&1 || true
+          python tests/smoke_test.py

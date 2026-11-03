@@ -1,0 +1,71 @@
+# ============================================================
+#  Design-Guard-ZeroBaran — ملف الإعدادات المركزي
+#  كل شيء هنا، بلا كود صلب. القيم ${} تُقرأ من متغيرات البيئة.
+#  المشروع #39 — منظومة مراقبة جودة مخرجات الذكاء الاصطناعي
+#  المؤلف: Baran Avisat | baranavisat@gmail.com | واتساب: 00905313263722
+# ============================================================
+
+owner:
+  name: "Baran Avisat"
+  email: "Baranavisat@gmail.com"
+  whatsapp: "00905313263722"
+  store: "https://baranavi.gumroad.com/"
+  brand: "ZeroBaran Studio"
+
+pipeline:
+  inbox_dir: "inbox"          # ضع الملفات المولّدة هنا (صور/نصوص) ليتم فحصها
+  archive_dir: "archive"      # تُنقل إليها الملفات بعد الفحص (accepted/rejected)
+  extensions_image: [".png", ".jpg", ".jpeg", ".webp", ".bmp", ".tiff"]
+  extensions_text: [".txt", ".md", ".html", ".json"]
+
+# ---------- الطبقة 1: عتبات الفحص البصري الآلي (OpenCV/Pillow) ----------
+inspection:
+  min_width: 300               # أقل عرض مقبول بالبكسل
+  min_height: 300
+  max_aspect_ratio: 4.0        # نسبة أبعاد شاذة (عرض/ارتفاع) ⇒ رفض
+  blur_threshold: 60.0         # تباين Laplacian أقل منه ⇒ صورة ضبابية
+  black_frame_std: 6.0         # انحراف معياري أقل ⇒ إطار شبه أسود
+  white_frame_std: 6.0         # انحراف معياري أعلى ⇒ إطار شبه أبيض
+  corruption_entropy_min: 1.5  # إنتروبيا البكسل أقل ⇒ نمط رديء/تالف
+  duplicate_similarity: 0.985  # تشابه الهيستوجرام ⇒ نسخة مكررة
+  # كشف التشوهات الهندسية الشائعة في صور AI (أصابع/أطراف زائدة):
+  anomaly_edge_density_max: 0.22   # كثافة حواف Canny أعلى ⇒ تشوه محتمل
+  anomaly_contours_max: 45         # عدد الكنتورات الضخمة ⇒ عناصر مشوّهة
+
+# ---------- الطبقة 2: النص (إملاء/منطق/هيكل) ----------
+text_checks:
+  min_length: 20                 # نص أقصر من هذا ⇒ تحذير
+  max_repeated_word: 3           # تكرار كلمة متتالية أكثر من هذا ⇒ خطأ توليد
+  forbidden_placeholders: ["lorem ipsum", "todo:", "placeholder", "[insert", "undefined", "null"]
+  mojibake_detect: true          # كشف ترميز مكسور
+  spellcheck: true               # تدقيق إملائي (عبر pyspellchecker إن وُجد)
+
+# ---------- الطبقة 3: العقل الذكي (Gemini Vision / Groq) ----------
+ai:
+  provider: "auto"               # auto | gemini | groq | mock
+  model:
+    gemini: "gemini-2.0-flash"   # مجاني، يدعم Vision
+    groq: "llama-3.3-70b-versatile"
+  temperature: 0.15
+  max_files_per_call: 4          # ملفات لكل استدعاء (توفير للحصص المجانية)
+  persona: "خبير تدقيق جودة أصول رقمية (Hallmark/Impeccable) صارم ودقيق"
+
+# ---------- القرار النهائي ----------
+decision:
+  accept_score: 75               # نسبة المطابقة >= هذه ⇒ معتمد
+  review_score: 55               # بينهما ⇒ يحتاج مراجعة بشرية
+  # ما دون review_score ⇒ مرفوض (أعد التوليد)
+
+# ---------- الطبقة 4: التنبيه والتخزين ----------
+alerts:
+  telegram:
+    enabled: true
+    report_on: ["rejected", "needs_review"]   # متى يُرسل تنبيه فوري
+    weekly_summary: true                       # ملخص إنتاجية أسبوعي كل أحد
+
+storage:
+  backend: "supabase"            # supabase | json (وضع محلي بلا حساب)
+  table: "qa_reports"
+  json_fallback_path: "state/qa_reports.json"
+
+schedule_note: "يفحص الـ inbox دورياً عبر GitHub Actions + عند كل push — راجع .github/workflows/design-guard-zerobaran.yml"

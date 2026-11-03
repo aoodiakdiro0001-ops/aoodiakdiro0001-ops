@@ -48,3 +48,10 @@ dist/
 pulse-zero/scripts/state/
 __pycache__/
 *.pyc
+
+# Design-Guard-ZeroBaran local state & demo artifacts
+design-guard-zerobaran/state/
+design-guard-zerobaran/inbox/*
+!design-guard-zerobaran/inbox/.gitkeep
+design-guard-zerobaran/archive/**/__pycache__/
+__pycache__/
