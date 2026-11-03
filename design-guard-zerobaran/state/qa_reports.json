@@ -1,0 +1,303 @@
+{
+ "96339402621615c3f9a3d385d32ebc7be87235d0": {
+  "asset_id": "96339402621615c3",
+  "filename": "poster_clean_COPY.png",
+  "kind": "image",
+  "width": 960,
+  "height": 640,
+  "file_size": 7953,
+  "format": "png",
+  "checksum": "96339402621615c3f9a3d385d32ebc7be87235d0",
+  "structural_score": 64.0,
+  "match_score": 70.0,
+  "verdict": "needs_review",
+  "brand_consistency": 81.0,
+  "defects": [
+   {
+    "type": "EXACT_DUPLICATE",
+    "location": "auto-inspection",
+    "severity": "major",
+    "note_ar": "نسخة مطابقة حرفياً للأصل المفحوص سابقاً «poster_clean.png» — مضيعة لدفعة توليد."
+   },
+   {
+    "type": "NEAR_DUPLICATE",
+    "location": "auto-inspection",
+    "severity": "major",
+    "note_ar": "تشابه بصري 99.2% مع أصل مفحوص سابقاً — نسخة شبه مكررة."
+   }
+  ],
+  "summary_ar": "تقييم مبدئي آلي (Mock) للمخرج: accepted. عيوب مرصودة: 2.",
+  "fix_suggestion_ar": "الأصل سليم — انشره بثقة.",
+  "ai_provider": "mock-heuristic",
+  "inspector_findings": [
+   {
+    "code": "EXACT_DUPLICATE",
+    "severity": "major",
+    "message_ar": "نسخة مطابقة حرفياً للأصل المفحوص سابقاً «poster_clean.png» — مضيعة لدفعة توليد.",
+    "metric": {}
+   },
+   {
+    "code": "NEAR_DUPLICATE",
+    "severity": "major",
+    "message_ar": "تشابه بصري 99.2% مع أصل مفحوص سابقاً — نسخة شبه مكررة.",
+    "metric": {
+     "similarity": 0.992
+    }
+   }
+  ],
+  "checked_at": "2026-11-03T13:45:51.971158+00:00",
+  "created_at": "2026-11-03T13:45:51.971177+00:00"
+ },
+ "bb5ed71e809cc03013f6b86753551abbe25b9220": {
+  "asset_id": "bb5ed71e809cc030",
+  "filename": "poster_blurry.png",
+  "kind": "image",
+  "width": 960,
+  "height": 640,
+  "file_size": 63012,
+  "format": "png",
+  "checksum": "bb5ed71e809cc03013f6b86753551abbe25b9220",
+  "structural_score": 55.0,
+  "match_score": 62.5,
+  "verdict": "needs_review",
+  "brand_consistency": 75.0,
+  "defects": [
+   {
+    "type": "BLURRY_IMAGE",
+    "location": "auto-inspection",
+    "severity": "critical",
+    "note_ar": "الصورة ضبابية (تباين Laplacian=0.6 < 60.0)."
+   }
+  ],
+  "summary_ar": "تقييم مبدئي آلي (Mock) للمخرج: needs_review. عيوب مرصودة: 1.",
+  "fix_suggestion_ar": "أعد التوليد مع تصحيح العيوب المدرجة أعلاه، ثم أعد الدفع للفحص.",
+  "ai_provider": "mock-heuristic",
+  "inspector_findings": [
+   {
+    "code": "BLURRY_IMAGE",
+    "severity": "critical",
+    "message_ar": "الصورة ضبابية (تباين Laplacian=0.6 < 60.0).",
+    "metric": {
+     "laplacian": 0.6
+    }
+   }
+  ],
+  "checked_at": "2026-11-03T13:45:51.872805+00:00",
+  "created_at": "2026-11-03T13:45:51.872824+00:00"
+ },
+ "53d1d715cf222774b9ad6b888778768f8717372b": {
+  "asset_id": "53d1d715cf222774",
+  "filename": "frame_black.png",
+  "kind": "image",
+  "width": 600,
+  "height": 600,
+  "file_size": 2256,
+  "format": "png",
+  "checksum": "53d1d715cf222774b9ad6b888778768f8717372b",
+  "structural_score": 0.0,
+  "match_score": 14.0,
+  "verdict": "rejected",
+  "brand_consistency": 33.0,
+  "defects": [
+   {
+    "type": "BLACK_FRAME",
+    "location": "auto-inspection",
+    "severity": "critical",
+    "note_ar": "الإطار شبه أسود بالكامل — فشل واضح في التوليد."
+   },
+   {
+    "type": "BLURRY_IMAGE",
+    "location": "auto-inspection",
+    "severity": "critical",
+    "note_ar": "الصورة ضبابية (تباين Laplacian=0.0 < 60.0)."
+   },
+   {
+    "type": "LOW_ENTROPY_PATTERN",
+    "location": "auto-inspection",
+    "severity": "major",
+    "note_ar": "إنتروبيا منخفضة (-0.00) — نمط رديء/بلوكات متكررة توحي بفساد."
+   }
+  ],
+  "summary_ar": "تقييم مبدئي آلي (Mock) للمخرج: rejected. عيوب مرصودة: 3.",
+  "fix_suggestion_ar": "أعد التوليد مع تصحيح العيوب المدرجة أعلاه، ثم أعد الدفع للفحص.",
+  "ai_provider": "mock-heuristic",
+  "inspector_findings": [
+   {
+    "code": "BLACK_FRAME",
+    "severity": "critical",
+    "message_ar": "الإطار شبه أسود بالكامل — فشل واضح في التوليد.",
+    "metric": {
+     "std": 0.0
+    }
+   },
+   {
+    "code": "BLURRY_IMAGE",
+    "severity": "critical",
+    "message_ar": "الصورة ضبابية (تباين Laplacian=0.0 < 60.0).",
+    "metric": {
+     "laplacian": 0.0
+    }
+   },
+   {
+    "code": "LOW_ENTROPY_PATTERN",
+    "severity": "major",
+    "message_ar": "إنتروبيا منخفضة (-0.00) — نمط رديء/بلوكات متكررة توحي بفساد.",
+    "metric": {
+     "entropy": -0.0
+    }
+   }
+  ],
+  "checked_at": "2026-11-03T13:45:51.903972+00:00",
+  "created_at": "2026-11-03T13:45:51.903990+00:00"
+ },
+ "729b6ab1d1856f1403a26b9d96b7845763218774": {
+  "asset_id": "729b6ab1d1856f14",
+  "filename": "thumb_tiny.png",
+  "kind": "image",
+  "width": 120,
+  "height": 90,
+  "file_size": 2308,
+  "format": "png",
+  "checksum": "729b6ab1d1856f1403a26b9d96b7845763218774",
+  "structural_score": 37.0,
+  "match_score": 47.5,
+  "verdict": "rejected",
+  "brand_consistency": 63.0,
+  "defects": [
+   {
+    "type": "TINY_DIMENSIONS",
+    "location": "auto-inspection",
+    "severity": "critical",
+    "note_ar": "الأبعاد (120×90) أصغر من الحد الأدنى (300×300) — غير صالحة للنشر التجاري."
+   },
+   {
+    "type": "NEAR_DUPLICATE",
+    "location": "auto-inspection",
+    "severity": "major",
+    "note_ar": "تشابه بصري 99.2% مع أصل مفحوص سابقاً — نسخة شبه مكررة."
+   }
+  ],
+  "summary_ar": "تقييم مبدئي آلي (Mock) للمخرج: needs_review. عيوب مرصودة: 2.",
+  "fix_suggestion_ar": "أعد التوليد مع تصحيح العيوب المدرجة أعلاه، ثم أعد الدفع للفحص.",
+  "ai_provider": "mock-heuristic",
+  "inspector_findings": [
+   {
+    "code": "TINY_DIMENSIONS",
+    "severity": "critical",
+    "message_ar": "الأبعاد (120×90) أصغر من الحد الأدنى (300×300) — غير صالحة للنشر التجاري.",
+    "metric": {
+     "width": 120,
+     "height": 90
+    }
+   },
+   {
+    "code": "NEAR_DUPLICATE",
+    "severity": "major",
+    "message_ar": "تشابه بصري 99.2% مع أصل مفحوص سابقاً — نسخة شبه مكررة.",
+    "metric": {
+     "similarity": 0.992
+    }
+   }
+  ],
+  "checked_at": "2026-11-03T13:45:51.910159+00:00",
+  "created_at": "2026-11-03T13:45:51.910174+00:00"
+ },
+ "1e0d1c3693ecb47a7f59903fd0a624a0fc0d22f7": {
+  "asset_id": "1e0d1c3693ecb47a",
+  "filename": "copy_good.md",
+  "kind": "text",
+  "width": 0,
+  "height": 0,
+  "file_size": 241,
+  "format": "text",
+  "checksum": "1e0d1c3693ecb47a7f59903fd0a624a0fc0d22f7",
+  "structural_score": 100.0,
+  "match_score": 100.0,
+  "verdict": "accepted",
+  "brand_consistency": 100,
+  "defects": [],
+  "summary_ar": "تقييم مبدئي آلي (Mock) للمخرج: accepted. عيوب مرصودة: 0.",
+  "fix_suggestion_ar": "الأصل سليم — انشره بثقة.",
+  "ai_provider": "mock-heuristic",
+  "inspector_findings": [],
+  "checked_at": "2026-11-03T13:45:52.190767+00:00",
+  "created_at": "2026-11-03T13:45:52.190790+00:00"
+ },
+ "d62a7f0b6dd4baab64ab01965cf78c23e84e202b": {
+  "asset_id": "d62a7f0b6dd4baab",
+  "filename": "copy_bad.md",
+  "kind": "text",
+  "width": 0,
+  "height": 0,
+  "file_size": 254,
+  "format": "text",
+  "checksum": "d62a7f0b6dd4baab64ab01965cf78c23e84e202b",
+  "structural_score": 19.0,
+  "match_score": 32.5,
+  "verdict": "rejected",
+  "brand_consistency": 51.0,
+  "defects": [
+   {
+    "type": "LAZY_PLACEHOLDERS",
+    "location": "auto-inspection",
+    "severity": "major",
+    "note_ar": "عناصر نابضة بالتخمين لم تُستبدل: lorem ipsum, todo: — المحتوى غير جاهز للنشر."
+   },
+   {
+    "type": "REPETITION_LOOP",
+    "location": "auto-inspection",
+    "severity": "critical",
+    "note_ar": "كلمة تكررت 4 مرات متتالية — حلقة تكرار كلاسيكية في مخرجات الذكاء الاصطناعي."
+   },
+   {
+    "type": "SPELL_ERRORS",
+    "location": "auto-inspection",
+    "severity": "major",
+    "note_ar": "15 كلمات إنجليزية مشكوكة من أصل 40 — راجع الإملاء قبل النشر."
+   }
+  ],
+  "summary_ar": "تقييم مبدئي آلي (Mock) للمخرج: rejected. عيوب مرصودة: 3.",
+  "fix_suggestion_ar": "أعد التوليد مع تصحيح العيوب المدرجة أعلاه، ثم أعد الدفع للفحص.",
+  "ai_provider": "mock-heuristic",
+  "inspector_findings": [
+   {
+    "code": "LAZY_PLACEHOLDERS",
+    "severity": "major",
+    "message_ar": "عناصر نابضة بالتخمين لم تُستبدل: lorem ipsum, todo: — المحتوى غير جاهز للنشر.",
+    "metric": {
+     "placeholders": [
+      "lorem ipsum",
+      "todo:"
+     ]
+    }
+   },
+   {
+    "code": "REPETITION_LOOP",
+    "severity": "critical",
+    "message_ar": "كلمة تكررت 4 مرات متتالية — حلقة تكرار كلاسيكية في مخرجات الذكاء الاصطناعي.",
+    "metric": {
+     "longest_run": 4
+    }
+   },
+   {
+    "code": "SPELL_ERRORS",
+    "severity": "major",
+    "message_ar": "15 كلمات إنجليزية مشكوكة من أصل 40 — راجع الإملاء قبل النشر.",
+    "metric": {
+     "samples": [
+      "amet",
+      "assests",
+      "bestest",
+      "choise",
+      "delivary",
+      "digitarl",
+      "ipsum",
+      "lorem"
+     ]
+    }
+   }
+  ],
+  "checked_at": "2026-11-03T13:45:52.389033+00:00",
+  "created_at": "2026-11-03T13:45:52.389055+00:00"
+ }
+}

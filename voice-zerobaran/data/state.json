@@ -1,0 +1,132 @@
+{
+ "jobs": [
+  {
+   "id": "script-150490e5585f",
+   "type": "script",
+   "title": "Welcome to Voice-ZeroBaran",
+   "brain": "mock-local",
+   "words": 11,
+   "created_at": "2026-11-03T14:41:41+00:00"
+  },
+  {
+   "id": "tts-9982b41df250",
+   "type": "tts",
+   "title": "Welcome to Voice-ZeroBaran. Free studio voice, professional ",
+   "voice": "vzb-morgan",
+   "speed": 1.0,
+   "preset": "voiceover",
+   "quality_grade": "A",
+   "duration_s": 5.015,
+   "issues": [],
+   "engine": "bark/piper",
+   "created_at": "2026-11-03T14:41:41+00:00",
+   "asset": {
+    "path": "/workspace/voice-zerobaran/output/tts-9982b41df250.wav",
+    "sha": "976f0d2a3c893a9e",
+    "size_kb": 235.1,
+    "created_at": "2026-11-03T14:41:41+00:00"
+   }
+  },
+  {
+   "id": "enh-fad193ad8a25",
+   "type": "enhance",
+   "title": "tts-9982b41df250.wav",
+   "preset": "voiceover",
+   "grade_before": "A",
+   "grade_after": "A",
+   "rms_before": -16.479469299316406,
+   "rms_after": -17.092164993286133,
+   "created_at": "2026-11-03T14:41:42+00:00",
+   "asset": {
+    "path": "/workspace/voice-zerobaran/output/tts-9982b41df250_voiceover_ad8a25.wav",
+    "sha": "cd15e562c64111d9",
+    "size_kb": 232.1,
+    "created_at": "2026-11-03T14:41:42+00:00"
+   }
+  },
+  {
+   "id": "script-1f4e8699bc7d",
+   "type": "script",
+   "title": "مرحباً بكم في فويس زيرو باران",
+   "brain": "mock-local",
+   "words": 14,
+   "created_at": "2026-11-03T14:41:42+00:00"
+  },
+  {
+   "id": "tts-6321cdc9bdad",
+   "type": "tts",
+   "title": "مرحباً بكم في فويس زيرو باران. استوديو صوتي مجاني بالكامل، ب",
+   "voice": "vzb-morgan",
+   "speed": 1.0,
+   "preset": "voiceover",
+   "quality_grade": "A",
+   "duration_s": 5.8,
+   "issues": [],
+   "engine": "bark/piper",
+   "created_at": "2026-11-03T14:41:42+00:00",
+   "asset": {
+    "path": "/workspace/voice-zerobaran/output/tts-6321cdc9bdad.wav",
+    "sha": "2c2f407ea3398d04",
+    "size_kb": 271.9,
+    "created_at": "2026-11-03T14:41:42+00:00"
+   }
+  },
+  {
+   "id": "enh-edfb60a6a380",
+   "type": "enhance",
+   "title": "tts-6321cdc9bdad.wav",
+   "preset": "voiceover",
+   "grade_before": "A",
+   "grade_after": "A",
+   "rms_before": -16.059619903564453,
+   "rms_after": -15.965137481689453,
+   "created_at": "2026-11-03T14:41:43+00:00",
+   "asset": {
+    "path": "/workspace/voice-zerobaran/output/tts-6321cdc9bdad_voiceover_a6a380.wav",
+    "sha": "d1051247be311887",
+    "size_kb": 267.7,
+    "created_at": "2026-11-03T14:41:43+00:00"
+   }
+  },
+  {
+   "id": "enh-1dde4d2f35e9",
+   "type": "enhance",
+   "title": "demo_noisy_input.wav",
+   "preset": "broadcast",
+   "grade_before": "A",
+   "grade_after": "A",
+   "rms_before": -7.894778251647949,
+   "rms_after": -16.02459716796875,
+   "created_at": "2026-11-03T14:41:43+00:00",
+   "asset": {
+    "path": "/workspace/voice-zerobaran/output/demo_noisy_input_broadcast_2f35e9.wav",
+    "sha": "f726797afaa21210",
+    "size_kb": 93.8,
+    "created_at": "2026-11-03T14:41:43+00:00"
+   }
+  },
+  {
+   "id": "stt-20624d6e4b98",
+   "type": "transcribe",
+   "title": "tts-9982b41df250_voiceover_ad8a25.wav",
+   "engine": "unavailable",
+   "chars": 0,
+   "created_at": "2026-11-03T14:41:43+00:00"
+  },
+  {
+   "id": "video-e501c9fca1c7",
+   "type": "video",
+   "title": "video-e501c9fca1c7.mp4",
+   "frames": 3,
+   "seconds_per_frame": 1.5,
+   "created_at": "2026-11-03T14:42:33+00:00",
+   "asset": {
+    "path": "/workspace/voice-zerobaran/output/video-e501c9fca1c7.mp4",
+    "sha": "167ffbe060b11ef3",
+    "size_kb": 63.5,
+    "created_at": "2026-11-03T14:42:33+00:00"
+   }
+  }
+ ],
+ "assets": []
+}
