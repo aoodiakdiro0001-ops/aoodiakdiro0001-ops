@@ -1,0 +1,39 @@
+# ============================================================
+# Agent-Mem-ZeroBaran — Project #34 cron brain (GitHub Actions FREE)
+# © Baran Avisat · Baranavisat@gmail.com · WhatsApp 00905313263722
+name: agent-mem-zerobaran
+on:
+  schedule:
+    - cron: "17 */6 * * *"     # hygiene pass every 6h
+    - cron: "7 3 * * 1"        # weekly digest Monday 03:07 UTC
+  workflow_dispatch:
+    inputs:
+      action: {description: "hygiene|demo", required: false, default: "hygiene"}
+permissions:
+  contents: read
+concurrency: agent-mem
+jobs:
+  maintain-memory:
+    runs-on: ubuntu-latest
+    env:
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Contract self-test (no keys needed)
+        run: python agent-mem-zerobaran/tests/smoke_test.py
+      - name: Memory hygiene + status
+        if: github.event.inputs.action != 'demo'
+        run: python agent-mem-zerobaran/scripts/mem_engine.py hygiene
+      - name: Demo pipeline (manual)
+        if: github.event.inputs.action == 'demo'
+        run: python agent-mem-zerobaran/scripts/mem_engine.py demo
+      - name: Persist local state artifact
+        uses: actions/upload-artifact@v4
+        with: {name: agent-mem-state, path: agent-mem-zerobaran/data/, if-no-files-found: ignore}

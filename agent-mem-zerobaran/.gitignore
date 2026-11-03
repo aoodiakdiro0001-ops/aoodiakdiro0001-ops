@@ -1,0 +1,3 @@
+data/*.db
+data/memory_cards.json
+__pycache__/
