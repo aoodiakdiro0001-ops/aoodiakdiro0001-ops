@@ -1,0 +1,97 @@
+# ============================================================
+# Scrapling-ZeroBaran — Master Configuration
+# Project #38 | Author: Baran Avisat
+# Contact: Baranavisat@gmail.com | WhatsApp: 00905313263722
+# ============================================================
+
+identity:
+  owner: "Baran Avisat"
+  brand: "ZeroBaran Studio"
+  email: "Baranavisat@gmail.com"
+  whatsapp: "00905313263722"
+
+# ---- Layer 1: Crawling targets ------------------------------------
+# Add any site + CSS selector recipe here. The engine respects robots.txt,
+# throttles politely, rotates human-like headers, and detects blocks.
+targets:
+  - name: "quotes-demo"
+    description: "Public sandbox for legal scraping practice"
+    start_urls:
+      - "https://quotes.toscrape.com/"
+    max_pages: 3
+    follow_links_selector: "nav.pager a"     # pagination links to crawl
+    extractors:
+      item_selector: "div.quote"             # repeating record container
+      fields:
+        text:   { selector: "span.text", attr: null }
+        author: { selector: "small.author", attr: null }
+        tags:   { selector: "a.tag", attr: null, multiple: true, join: "," }
+      table_selectors: []
+
+  - name: "books-sandbox"
+    description: "Sandbox store — structure_raw_text demo"
+    start_urls:
+      - "https://toscrape.com/"
+    max_pages: 1
+    follow_links_selector: null
+    extractors:
+      item_selector: null                    # no recipe -> full-text mode
+      fields: {}
+      table_selectors: []
+
+defaults:
+  delay_seconds_min: 1.0          # polite throttle (randomized min..max)
+  delay_seconds_max: 3.0
+  max_retries: 3                  # exponential backoff on transient errors
+  timeout_seconds: 20
+  respect_robots_txt: true
+  user_agent_pool:                # human-like rotation (NOT fingerprint spoofing)
+    - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+    - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15"
+    - "Mozilla/5.0 (X11; Linux x86_64; rv:125.0) Gecko/20100101 Firefox/125.0"
+  fetch_engine_order: ["requests", "scrapling-stealth", "playwright"]
+  # ^ tried in order per URL; scrapling/playwright used only if installed+enabled.
+
+anti_block:
+  enabled: true                   # block-detection + backoff + UA rotation
+  circuit_breaker_threshold: 3    # consecutive blocks -> abort run (never hammer)
+  detect_markers:
+    - "captcha"
+    - "unusual traffic"
+    - "access denied"
+    - "error 403"
+    - "are you a robot"
+
+adaptive_selectors:               # Scrapling-style self-healing (built-in OSS impl)
+  enabled: true
+  reanchor_on_failure: true       # try sibling/parent/text-anchor fallbacks
+
+# ---- Layer 2: AI parsing brain -------------------------------------
+ai:
+  provider: "auto"                # auto | groq | gemini | mock
+  groq_model: "llama-3.3-70b-versatile"
+  gemini_model: "gemini-2.0-flash"
+  max_items_per_call: 20
+  structure_raw_text: true        # clean messy page text into typed records
+  dedupe_key_fields: ["text", "author"]
+
+# ---- Layer 3: Persistence ------------------------------------------
+storage:
+  supabase_table_records: "scraped_records"
+  supabase_table_runs: "crawl_runs"
+  local_state_dir: "../state"     # JSON fallback when Supabase not configured
+  history_keep_per_key: 50
+
+# ---- Layer 4: Delivery ----------------------------------------------
+alerts:
+  report_threshold_new_records: 1
+  send_run_report: true
+  send_change_alerts: true        # price/value changes -> instant Telegram alert
+
+compliance:
+  enforce_tos_gate: true
+  forbidden_purposes:
+    - "credential harvesting"
+    - "personal data of private individuals without lawful basis"
+    - "circumventing paywalls or login walls"
+    - "denial-of-service style hammering"
