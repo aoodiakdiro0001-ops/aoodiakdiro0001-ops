@@ -1,0 +1,13 @@
+# LLM-Router-ZeroBaran configuration  (c) Baran Avisat — ZeroBaran Studio
+# Watchlist: yahoo/stooq tickers (AAPL, MSFT, 9980.HK ...) or crypto pairs (BTCUSDT, ETHUSDT)
+watchlist:
+  - symbol: AAPL
+    tf: 1d
+  - symbol: BTCUSDT
+    tf: 1d
+  - symbol: ETHUSDT
+    tf: 1d
+
+risk_pct: 1.0          # % of capital risked per planned trade (position sizing)
+capital: 1000.0        # reference account size for qty math
+min_confidence_alert: 60.0   # only telegram-alert signals above this confidence
