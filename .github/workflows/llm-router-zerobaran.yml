@@ -1,0 +1,59 @@
+name: LLM-Router-ZeroBaran (Project #37)
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"          # تحليل مجدول كل 6 ساعات — خادم مجاني
+    - cron: "0 8 * * 1"            # ملخص أسبوعي الأحد 08:00 UTC
+  workflow_dispatch:
+    inputs:
+      symbol:
+        description: "رمز واحد لتحليله فوراً (اتركه فارغًا لقائمة المراقبة كاملة)"
+        required: false
+        default: ""
+      mode:
+        description: "mode"
+        type: choice
+        options: [run, demo, weekly]
+        default: run
+  push:
+    paths:
+      - "llm-router-zerobaran/**"
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install deps
+        run: pip install -r llm-router-zerobaran/scripts/requirements.txt
+      - name: Self-test (contracts, no keys needed)
+        run: python llm-router-zerobaran/tests/smoke_test.py
+      - name: Run pipeline
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          cd llm-router-zerobaran
+          if [ "${{ github.event.inputs.mode }}" = "weekly" ] || [[ "${{ github.event.schedule }}" == "0 8 * * 1" ]]; then
+            python scripts/llm_router.py weekly
+          elif [ -n "${{ github.event.inputs.symbol }}" ]; then
+            SYM="${{ github.event.inputs.symbol }}" python scripts/single_symbol.py
+          else
+            python scripts/llm_router.py ${{ github.event.inputs.mode || 'run' }}
+          fi
+        continue-on-error: false
+      - name: Upload state (analysis logs + router stats)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lrz-state-${{ github.run_number }}
+          path: llm-router-zerobaran/state/
+          retention-days: 14
