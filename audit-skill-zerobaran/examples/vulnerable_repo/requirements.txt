@@ -1,0 +1,4 @@
+pyjwt==1.5.0
+flask==2.0.1
+requests
+pillow<9

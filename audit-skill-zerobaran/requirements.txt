@@ -1,0 +1,7 @@
+# Audit-Skill-ZeroBaran — core runs on Python stdlib only (zero cost, zero deps).
+# Optional power-ups (all free/OSS):
+semgrep>=1.70.0     ; python_version >= "3.8"   # external SAST engine (auto-detected)
+bandit>=1.7.8                                   # Python SAST (auto-detected)
+streamlit>=1.36.0                               # command-center dashboard
+pandas>=2.0.0                                   # dashboard dataframes
+PyYAML>=6.0                                    # optional config overrides

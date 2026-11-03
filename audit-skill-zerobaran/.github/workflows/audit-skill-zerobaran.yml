@@ -1,0 +1,81 @@
+# =====================================================================
+# Audit-Skill-ZeroBaran (#35) — CI security gate + scheduled fleet audit
+# (c) 2026 Baran Avisat · ZeroBaran Studio · Baranavisat@gmail.com
+# Runs on GitHub Actions FREE runners. Blocks deploys containing criticals.
+# =====================================================================
+name: audit-skill-zerobaran
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "17 */6 * * *"     # fleet sweep every 6 hours
+    - cron: "0 8 * * 1"        # weekly posture digest (Mondays 08:00 UTC)
+  workflow_dispatch:
+    inputs:
+      target:
+        description: path or repo dir to audit
+        default: "."
+        required: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: audit-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1}
+
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+
+      - name: Install optional OSS engines (Semgrep + Bandit)
+        run: pip install --quiet semgrep bandit || echo "engines optional"
+
+      - name: Self-test contracts (offline, no secrets needed)
+        working-directory: audit-skill-zerobaran
+        run: python tests/smoke_test.py
+
+      - name: Run audit gate (${{ github.event.inputs.target || '.' }})
+        working-directory: audit-skill-zerobaran
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ASZ_STATE_DIR: ${{ github.workspace }}/audit-skill-zerobaran/data
+        run: |
+          TARGET="${{ github.event.inputs.target || '.' }}"
+          if [ "$TARGET" = "." ]; then SUB=".github/actions-stub"; mkdir -p "$SUB"; fi
+          python scripts/audit.py scan "${TARGET:-.}" --tag "${{ github.ref_name }}" --fail-on critical \
+            || { echo "::error::🛡️ Audit-Skill-ZeroBaran BLOCKED the pipeline — critical vulnerabilities found."; exit 1; }
+
+      - name: Weekly posture digest
+        if: github.event.schedule == '0 8 * * 1'
+        working-directory: audit-skill-zerobaran
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python scripts/audit.py weekly
+
+      - name: Upload audit state + report artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-report-${{ github.run_number }}
+          path: |
+            audit-skill-zerobaran/data/
+            audit-skill-zerobaran/reports/
+          retention-days: 14

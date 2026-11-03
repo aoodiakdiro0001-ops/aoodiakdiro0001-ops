@@ -1,0 +1,20 @@
+# Audit-Skill-ZeroBaran custom Semgrep rules (OWASP LLM Top 10 focus)
+# (c) 2026 Baran Avisat — MIT. Loaded automatically when semgrep is installed.
+rules:
+  - id: asz-agent-user-input-in-system-prompt
+    languages: [python]
+    severity: ERROR
+    message: User-controlled input concatenated into the system prompt (prompt injection).
+    pattern-regex: '(?i)system_prompt\s*=\s*f["\x27.]'
+    metadata: {cwe: "74", owasp_llm: LLM01}
+  - id: asz-agent-destructive-tool-no-confirm
+    languages: [python]
+    severity: WARNING
+    message: Destructive agent tool defined without confirmation gate.
+    pattern-regex: '(?i)(delete|rmtree|payment|transfer).*tool|tool.*(delete|payment)'
+    metadata: {cwe: "250", owasp_llm: LLM06}
+  - id: asz-hardcoded-openai-key
+    languages: [generic]
+    severity: ERROR
+    pattern-regex: 'sk-[A-Za-z0-9]{32,}'
+    metadata: {cwe: "798"}
