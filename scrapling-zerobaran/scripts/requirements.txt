@@ -1,0 +1,22 @@
+# ============================================================
+# Scrapling-ZeroBaran — 100% Free OSS Stack
+# Author: Baran Avisat | Baranavisat@gmail.com | WhatsApp: 00905313263722
+# ============================================================
+
+# ---- Core (required) ----
+requests>=2.31
+beautifulsoup4>=4.12
+lxml>=5.0
+
+# ---- Smart extraction & headless fallback (optional) ----
+scrapling>=0.2        # OSS adaptive scraping (StealthyFetcher / PlaywrightFetcher)
+playwright>=1.44      # headless browser for JS-heavy pages
+
+# ---- Storage backend (optional — falls back to local JSON) ----
+supabase>=2.0
+
+# ---- Dashboard UI (optional) ----
+streamlit>=1.32
+
+# NOTE: The system runs fully with ONLY the "Core" section installed.
+# Every optional layer has a graceful built-in fallback (see engines.py).
