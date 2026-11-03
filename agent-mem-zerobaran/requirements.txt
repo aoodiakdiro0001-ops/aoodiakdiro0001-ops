@@ -1,0 +1,4 @@
+# Agent-Mem-ZeroBaran — no runtime installs required (pure stdlib).
+# Optional power-ups:
+# streamlit>=1.32        # dashboard.py
+# supabase[aiohttp]      # not needed; PostgREST used via urllib
