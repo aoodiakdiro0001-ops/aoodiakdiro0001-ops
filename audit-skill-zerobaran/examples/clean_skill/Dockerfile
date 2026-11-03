@@ -1,0 +1,5 @@
+FROM python:3.12-slim@sha256:0b8f8e7a5d4c3b2a19087766554433221100ffeeddccbbaa9988776655443322
+WORKDIR /app
+COPY . .
+USER 10001:10001
+CMD ["python", "skill.py"]
